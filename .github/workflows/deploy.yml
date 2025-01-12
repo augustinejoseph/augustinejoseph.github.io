@@ -86,7 +86,7 @@ jobs:
           echo "List after deleting...."
           ls -al
 
-          cp -r out/* .
+          sudo cp -r out/* .
 
           echo "List after copying from out to root...."
           la -al
