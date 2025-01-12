@@ -75,7 +75,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git fetch --all
-          
+
           # Checkout gh-pages branch
           git checkout gh-pages
 
@@ -83,7 +83,9 @@ jobs:
           cp -a out/. .
 
           # Stage only the files from the out/ directory
-          git add .
+          git add out/
+          
+          git commit
 
           # Create a descriptive commit message
           git commit -m "Deploy to GitHub Pages: [$(git rev-parse --short HEAD)]"
