@@ -86,16 +86,7 @@ jobs:
           echo "List after deleting...."
           ls -al
 
-          # Check if the out folder exists and has files
-          # if [ -d "out" ] && [ "$(ls -A out)" ]; then
-          #     echo "Copying files from the 'out' folder..."
-          #     cp -a out/. .  # Copies everything from 'out' to the root directory
-          # else
-          #     echo "'out' directory is missing or empty. Skipping deployment."
-          #     exit 1  # Exit the script if 'out' folder is not found or is empty
-          # fi
-
-          cp out/* .
+          cp -r out/* .
 
           echo "List after copying from out to root...."
           la -al
