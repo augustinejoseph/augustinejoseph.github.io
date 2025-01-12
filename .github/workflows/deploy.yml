@@ -63,4 +63,4 @@ jobs:
           fi
 
           # Push changes to gh-pages (force push if necessary)
-          git push origin gh-pages --force-with-lease
+          git push origin gh-pages --force
