@@ -42,13 +42,17 @@ jobs:
           # Add remote with access token
           git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/augustinejoseph/augustinejoseph.github.io.git
 
-          # Create a new branch and switch to it
-          git checkout --orphan gh-pages
+          # Checkout to the gh-pages branch (force check out if it doesn't exist)
+          git fetch origin
+          git checkout gh-pages || git checkout --orphan gh-pages
 
-          # Remove all files from the index (because it's a new branch)
+          # Remove all previous files (because it's a fresh deployment)
           git rm -rf .
-
-          # Copy the exported static files to the root of the repository
+          
+          # Add the .nojekyll file to bypass Jekyll processing
+          touch out/.nojekyll
+          
+          # Copy the static export files from 'out' directory
           cp -a out/. .
 
           # Add and commit the changes
@@ -57,4 +61,3 @@ jobs:
 
           # Force push the changes to the gh-pages branch
           git push --force origin gh-pages
-
