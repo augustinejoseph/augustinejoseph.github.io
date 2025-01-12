@@ -1,63 +1,59 @@
-name: Deploy to GitHub Pages
+#!/bin/bash
 
-on:
-  push:
-    branches:
-      - main  # Trigger deployment when changes are pushed to the main branch
+# Set exit on error
+set -e
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+# Log start of deployment
+echo "==== Deploying to GitHub Pages ===="
 
-    steps:
-      # Step 1: Checkout the repository
-      - name: Checkout repository
-        uses: actions/checkout@v2
+# Step 1: Install dependencies
+echo "Step 1: Installing dependencies..."
+npm install
 
-      # Step 2: Set up Node.js environment
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'  # Or your preferred Node.js version
+# Step 2: Build the Next.js app
+echo "Step 2: Building the Next.js app..."
+npm run build
 
-      # Step 3: Install dependencies
-      - name: Install dependencies
-        run: npm install
+# Step 3: Export the static site
+echo "Step 3: Exporting static files..."
+npm run export
 
-      # Step 4: Build and export the Next.js static site
-      - name: Build and export static files
-        run: |
-          npm run build
-          npm run export
+# Step 4: Configure Git for deployment
+echo "Step 4: Configuring Git for deployment..."
+git config user.name "GitHub Actions"
+git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      # Step 5: Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Use your secret token here
-        run: |
-          # Configure Git for deployment
-          git config user.name "GitHub Actions"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+# Step 5: Set the Git remote URL with the token (Do not echo the token itself)
+echo "Step 5: Adding Git remote with access token..."
+echo "Using GitHub token to authenticate for deployment..."
+git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/augustinejoseph/augustinejoseph.github.io.git
 
-          # Add remote with access token
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/augustinejoseph/augustinejoseph.github.io.git
+# Step 6: Checkout gh-pages branch
+echo "Step 6: Fetching and checking out the gh-pages branch..."
+git fetch origin
+git checkout gh-pages || git checkout --orphan gh-pages
 
-          # Checkout to the gh-pages branch (force check out if it doesn't exist)
-          git fetch origin
-          git checkout gh-pages || git checkout --orphan gh-pages
+# Step 7: Remove all files from the branch (fresh start)
+echo "Step 7: Removing all files from the gh-pages branch..."
+git rm -rf .
 
-          # Remove all previous files (because it's a fresh deployment)
-          git rm -rf .
-          
-          # Add the .nojekyll file to bypass Jekyll processing
-          touch out/.nojekyll
-          
-          # Copy the static export files from 'out' directory
-          cp -a out/. .
+# Step 8: Create .nojekyll to bypass Jekyll processing
+echo "Step 8: Creating .nojekyll file to bypass Jekyll processing..."
+touch .nojekyll
 
-          # Add and commit the changes
-          git add -A
-          git commit -m "Deploy to GitHub Pages"
+# Step 9: Copy the exported static files to the root
+echo "Step 9: Copying exported static files from the 'out' directory to the root..."
+cp -a out/. .
 
-          # Force push the changes to the gh-pages branch
-          git push --force origin gh-pages
+# Step 10: Add and commit changes
+echo "Step 10: Adding and committing the changes..."
+git add -A
+git commit -m "Deploy to GitHub Pages"
+
+# Step 11: Force push to gh-pages branch
+echo "Step 11: Pushing changes to the gh-pages branch..."
+echo "Pushing to the gh-pages branch with the configured token..."
+git push --force origin gh-pages
+
+# Log end of deployment
+echo "==== Deployment complete! ===="
