@@ -74,11 +74,10 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          git fetch --all
+          
           # Checkout gh-pages branch
           git checkout gh-pages
-
-          # Clean up existing files (optional)
-          git rm -rf . 
 
           # Copy built files to the current directory
           cp -a out/. .
