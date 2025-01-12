@@ -64,3 +64,7 @@ jobs:
 
           # Push changes to gh-pages (force push if necessary)
           git push origin gh-pages --force
+
+          # Print post-push status
+          echo "Deployment status:"
+          git status 
