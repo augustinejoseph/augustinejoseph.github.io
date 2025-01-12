@@ -81,7 +81,7 @@ jobs:
 
           # Clean up existing files (except out folder)
           rm -rf node_modules/
-          find . -not -path "./out" -not -path "./.git" -exec rm -rf {} +
+          find . -not -path "./out" -not -path "./.git" -not -path "./" -delete
 
           # Copy built files to the current directory
           cp -r out/* . 
