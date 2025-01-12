@@ -45,11 +45,11 @@ jobs:
           # Fetch all branches (including remote)
           git fetch --all
 
-          # Checkout deployment_branch
-          git checkout deployment_branch
+          # Checkout gh-pages
+          git checkout gh-pages
 
           # Handle potential conflicts (optional)
-          if git merge --ff-only origin/deployment_branch; then
+          if git merge --ff-only origin/gh-pages; then
             echo "Fast-forward merge successful. No conflicts detected."
           else
             echo "Merge conflicts detected! Resolve conflicts manually and run 'git add' for resolved files."
@@ -57,5 +57,5 @@ jobs:
             exit 1  # Exit with non-zero code to indicate failure
           fi
 
-          # Push changes to deployment_branch (force push if necessary)
-          git push origin deployment_branch --force-with-lease
+          # Push changes to gh-pages (force push if necessary)
+          git push origin gh-pages --force-with-lease
