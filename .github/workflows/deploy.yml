@@ -26,7 +26,7 @@ jobs:
           npm run build
           npm run export
 
-      - name: Debug: List out directory contents
+      - name:  List out directory contents
         run: ls -la out/
 
       - name: Deploy to GitHub Pages
@@ -38,7 +38,7 @@ jobs:
 
           # Copy built files
           cp -a out/. .
-          
+
           ls -la
 
           # Stage all changes
