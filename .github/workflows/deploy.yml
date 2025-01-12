@@ -83,11 +83,17 @@ jobs:
           rm -rf node_modules/
           find . -not -path "./out" -not -path "./.git" -not -path "./" -delete
 
-          # Copy built files to the current directory
-          cp -r out/* . 
-
-          # Remove the original out directory
-          rm -rf out
+          echo "List after deleting...."
+          ls -al
+          
+          # Check if the out folder exists and has files
+          if [ -d "out" ] && [ "$(ls -A out)" ]; then
+              echo "Copying files from the 'out' folder..."
+              cp -a out/. .  # Copies everything from 'out' to the root directory
+          else
+              echo "'out' directory is missing or empty. Skipping deployment."
+              exit 1  # Exit the script if 'out' folder is not found or is empty
+          fi
 
           # Stage all changes
           git add .
