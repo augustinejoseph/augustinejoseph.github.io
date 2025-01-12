@@ -80,7 +80,7 @@ jobs:
           git checkout gh-pages
 
           # Clean up existing files (except out folder)
-          find . -maxdepth 1 -not -path "./out" -not -path "./.git" -exec rm -rf {} +
+          rm -rf !("out") 
 
           # Copy built files to the current directory
           cp -r out/* . 
