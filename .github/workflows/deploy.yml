@@ -26,6 +26,9 @@ jobs:
           npm run build
           npm run export
 
+      - name: Debug: List out directory contents
+        run: ls -la out/
+
       - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -35,6 +38,8 @@ jobs:
 
           # Copy built files
           cp -a out/. .
+          
+          ls -la
 
           # Stage all changes
           git add .
