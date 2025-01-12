@@ -81,20 +81,19 @@ jobs:
           echo "Before deletitng..."
           ls -al
 
-          mkdir ./build_files
-          cp -R out/* ./build_files/
-
           # Clean up existing files (except out folder)
           rm -rf node_modules/
-          find . -not -path "./out" -not -path "./build_files" -not -path "./.git" -not -path "./" -delete
+          find . ! -path "./out/*" ! -path "./.git/*" -delete
 
           echo "List after deleting...."
           ls -al
 
-          sudo cp -R ./build_files/* .
+          cp -r out/* .
 
-          echo "List after copying from build_files to root...."
+          echo "List after copying from out to root...."
           la -al
+
+          rm -rf out
 
           # Stage all changes
           git add .
