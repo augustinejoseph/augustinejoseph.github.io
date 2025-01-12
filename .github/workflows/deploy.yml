@@ -79,16 +79,19 @@ jobs:
           # Checkout gh-pages branch
           git checkout gh-pages
 
+          mkdir ./build_files
+          cp -R out/* ./build_files/
+
           # Clean up existing files (except out folder)
           rm -rf node_modules/
-          find . -not -path "./out" -not -path "./.git" -not -path "./" -delete
+          find . -not -path "./out" -not -path "./build_files" -not -path "./.git" -not -path "./" -delete
 
           echo "List after deleting...."
           ls -al
 
-          sudo cp -r out/* .
+          sudo cp -R build_files/* .
 
-          echo "List after copying from out to root...."
+          echo "List after copying from build_files to root...."
           la -al
 
           # Stage all changes
