@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Globe V",
+    "tags": [
+      "Python",
+      "Django",
+      "React",
+      "RestAPI",
+      "PostgreSQL",
+      "GIT",
+      "Docker",
+      "Axios",
+      "FTP",
+      "SAP"
+    ],
+    "description": "Application created using React.js and Python Django to manage the employees, products and customers for a Nasdaq listed company.",
+    "thumbnail": "https://i.postimg.cc/zBjPz7qJ/globev1.webp",
+    "repo": "",
+    "repoLinkExpired": true,
+    "liveLink": "",
+    "liveLinkExpired": true,
+    "slug": "globev",
+    "features": ["Managing customers, employees and products"]
+  },
+  {
+    "title": "Data Lens",
+    "tags": [
+      "Python",
+      "Django",
+      "React",
+      "NodeJS",
+      "JWT",
+      "RestAPI",
+      "GraphQL",
+      "PostgreSQL",
+      "GIT",
+      "MongoDB",
+      "Stripe",
+      "AWS",
+      "GCP",
+      "Docker",
+      "Websocket",
+      "Axios",
+      "Microservice"
+    ],
+    "description": "Datalens is a Article publishing website where any users can publish an article on anything and anybody can read the articles for free. The project was inspired from Medium.com which provided numerous quality resources. In this project I used technologies like microservices, React, Django, NodeJS, Webhooks, Docker and so on. ",
+    "thumbnail": "https://i.postimg.cc/4xKs3cCV/datalens.png",
+    "repo": "https://github.com/augustinejoseph/datalens-article-publising-website",
+    "repoLinkExpired": false,
+    "liveLink": "http://datalens.live",
+    "liveLinkExpired": true,
+    "slug": "data_lens",
+    "features": [
+      "Built for writers to share their thoughts and monetize their free time.",
+      "Improved and responsive UI with a modern interface.",
+      "Utilized technologies like React, Redux, Django, NodeJS, GraphQL, Rest API, PostgreSQL, MongoDB, NodeJS, JWT.",
+      "User Authentication is handled by Django, PostgreSQL and JWT Tokens.",
+      "Articles are managed using NodeJS server and MongoDB",
+      "Premium feature is introduced to remove ads and view premium articles.",
+      "",
+      "Integrated Stripe webhooks to handle online payments securely.",
+      "Implemented a headless architecture for enhanced flexibility and scalability."
+    ]
+  },
+  {
+    "title": "Movie Finder",
+    "tags": ["React", "Create React App", "Axios", "TMDB"],
+    "description": "A website that uses TMDB API to fetch movie data and shown using React.",
+    "thumbnail": "https://i.postimg.cc/NF7Jykqj/moviefinder.webp",
+    "repo": "https://github.com/augustinejoseph/movie-finder-react",
+    "repoLinkExpired": false,
+    "liveLink": "example.com",
+    "liveLinkExpired": true,
+    "slug": "movie_finder",
+    "features": [
+      "Fetching Movie data using TMDB API",
+      "Displaying movie information using React"
+    ]
+  },
+  {
+    "title": "Happy Feets",
+    "tags": [
+      "Python",
+      "Django",
+      "React",
+      "PostgreSQL",
+      "GIT",
+      "GitHub",
+      "Razorpay",
+      "AWS",
+      "Route53",
+      "Nginx",
+      "Gunicorn"
+    ],
+    "description": "An E-commerce website that sells footwears. Features like product view, payment, return are implemented.",
+    "thumbnail": "https://i.postimg.cc/4nRdhKnN/happyfeetz.png",
+    "repo": "https://github.com/augustinejoseph/e-commerce-website",
+    "repoLinkExpired": false,
+    "liveLink": "http://happyfeetz.in",
+    "liveLinkExpired": true,
+    "features": [
+      "Fully functional e-commerce website",
+      "Features like login, cart, wishlist, Razorpay payment, Razorpay refund, return and so on...",
+      "Python | Django | React | PostgreSQL | GIT | GitHub | Razorpay |",
+      "AWS | Route53 | AWS | Nginx | Gunicorn",
+      "Build using Django and MVT architecture",
+      "Used technologies like Django, and PostgreSQL.",
+      "Integrated online payment and refund using Razorpay."
+    ],
+    "project_slug": "happy_feets"
+  }
+]
