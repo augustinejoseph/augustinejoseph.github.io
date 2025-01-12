@@ -35,4 +35,4 @@ jobs:
           cp -a out/. .  # Copy files from out/ directory
           git add -A
           git commit -m "Deploy to GitHub Pages"
-          git push origin gh-pages --force
+          git push origin deployment_branch --force
