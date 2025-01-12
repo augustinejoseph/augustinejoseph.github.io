@@ -78,6 +78,8 @@ jobs:
 
           # Checkout gh-pages branch
           git checkout gh-pages
+          echo "Before deletitng..."
+          ls -al
 
           mkdir ./build_files
           cp -R out/* ./build_files/
@@ -89,7 +91,7 @@ jobs:
           echo "List after deleting...."
           ls -al
 
-          sudo cp -R build_files/* .
+          sudo cp -R ./build_files/* .
 
           echo "List after copying from build_files to root...."
           la -al
