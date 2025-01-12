@@ -90,7 +90,7 @@ jobs:
           cd out
 
           echo "List of file inside the out."
-          la -al
+          ls -al
 
           # Stage all changes
           git add -f .
