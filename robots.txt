@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+User-Agent: *
+Allow: /
+
+Host: https://augustinejoseph.github.io
+Sitemap: https://augustinejoseph.github.io/sitemap.xml
