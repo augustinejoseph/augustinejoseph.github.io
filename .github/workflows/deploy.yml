@@ -33,6 +33,8 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           cp -a out/. .  # Copy files from out/ directory
-          git add -A
+          git add .
           git commit -m "Deploy to GitHub Pages"
+          git config pull.rebase true
+          git pull origin deployment_branch
           git push origin deployment_branch --force
