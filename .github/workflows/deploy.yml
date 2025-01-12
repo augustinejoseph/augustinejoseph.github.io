@@ -79,11 +79,17 @@ jobs:
           # Checkout gh-pages branch
           git checkout gh-pages
 
-          # Copy built files to the current directory
-          # cp -a out/. .
+          # Clean up existing files (except out folder)
+          find . -maxdepth 1 -not -path "./out" -not -path "./.git" -delete
 
-          # Stage only the files from the out/ directory
-          git add out/
+          # Copy built files to the current directory
+          cp -r out/* . 
+
+          # Remove the original out directory
+          rm -rf out
+
+          # Stage all changes
+          git add .
 
 
           # Create a descriptive commit message
