@@ -32,10 +32,30 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          cp -a out/. .  # Copy files from out/ directory
+
+          # Copy built files
+          cp -a out/. .
+
+          # Stage all changes
           git add .
-          git commit -m "Deploy to GitHub Pages"
-          git fetch origin
+
+          # Create a descriptive commit message
+          git commit -m "Deploy to GitHub Pages: [$(git rev-parse --short HEAD)]"
+
+          # Fetch all branches (including remote)
+          git fetch --all
+
+          # Checkout deployment_branch
           git checkout deployment_branch
-          git reset --hard origin/deployment_branch 
-          git push origin deployment_branch --force
+
+          # Handle potential conflicts (optional)
+          if git merge --ff-only origin/deployment_branch; then
+            echo "Fast-forward merge successful. No conflicts detected."
+          else
+            echo "Merge conflicts detected! Resolve conflicts manually and run 'git add' for resolved files."
+            echo "Then, run 'git rebase --continue' to complete the rebase."
+            exit 1  # Exit with non-zero code to indicate failure
+          fi
+
+          # Push changes to deployment_branch (force push if necessary)
+          git push origin deployment_branch --force-with-lease
