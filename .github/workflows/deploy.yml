@@ -35,6 +35,6 @@ jobs:
           cp -a out/. .  # Copy files from out/ directory
           git add .
           git commit -m "Deploy to GitHub Pages"
-          git config pull.rebase true
+          git config pull.rebase false
           git pull origin deployment_branch
           git push origin deployment_branch --force
