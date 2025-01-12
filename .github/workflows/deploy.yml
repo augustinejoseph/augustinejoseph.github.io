@@ -28,14 +28,13 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config user.name "GitHub Actions"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/augustinejoseph/augustinejoseph.github.io.git
           git checkout --orphan gh-pages
           git rm -rf .
           cp -a out/. .
           git add -A
           git commit -m "Deploy to GitHub Pages"
-          git push --force origin gh-pages
+          git push origin gh-pages --force
