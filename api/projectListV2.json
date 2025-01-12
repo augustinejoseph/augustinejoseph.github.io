@@ -10,8 +10,7 @@
       "GIT",
       "Docker",
       "Axios",
-      "FTP",
-      "SAP"
+      "FTP"
     ],
     "description": "Application created using React.js and Python Django to manage the employees, products and customers for a Nasdaq listed company.",
     "thumbnail": "https://i.postimg.cc/zBjPz7qJ/globev1.webp",
