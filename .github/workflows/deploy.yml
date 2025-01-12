@@ -71,6 +71,8 @@ jobs:
 
 
 
+
+
           git config user.name "GitHub Actions"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
@@ -83,20 +85,15 @@ jobs:
 
           # Clean up existing files (except out folder)
           rm -rf node_modules/
-          find . ! -path "./out/*" ! -path "./.git/*" -delete
+          # find . ! -path "./out/*" ! -path "./.git/*" -delete
 
-          echo "List after deleting...."
-          ls -al
+          cd out
 
-          cp -r out/* .
-
-          echo "List after copying from out to root...."
+          echo "List of file inside the out."
           la -al
 
-          rm -rf out
-
           # Stage all changes
-          git add .
+          git add -f .
 
 
           # Create a descriptive commit message

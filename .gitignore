@@ -10,7 +10,7 @@
 
 # next.js
 /.next/
-# /out/
+/out/
 
 # production
 /build
@@ -38,4 +38,3 @@ next-env.d.ts
 .contentlayer
 
 .env
-.gitignore
