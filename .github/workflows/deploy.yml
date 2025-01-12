@@ -84,11 +84,11 @@ jobs:
 
           # Stage only the files from the out/ directory
           git add out/
-          
-          git commit
+
 
           # Create a descriptive commit message
           git commit -m "Deploy to GitHub Pages: [$(git rev-parse --short HEAD)]"
+          git log
 
           # Push changes to gh-pages (force push if necessary)
           git push origin gh-pages --force-with-lease
