@@ -80,7 +80,7 @@ jobs:
           git checkout gh-pages
 
           # Copy built files to the current directory
-          cp -a out/. .
+          # cp -a out/. .
 
           # Stage only the files from the out/ directory
           git add out/
