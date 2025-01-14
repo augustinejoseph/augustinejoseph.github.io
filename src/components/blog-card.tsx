@@ -10,7 +10,7 @@ export function BlogCard({
   isLast: boolean;
 }) {
   return (
-    <article className="space-y-2 cursor-pointer transition hover:bg-zinc-50 hover:dark:bg-zinc-800/50 p-4 rounded-lg">
+    <article className="cursor-pointer space-y-2 rounded-lg p-4 transition hover:bg-zinc-50 hover:dark:bg-zinc-800/50">
       <dl>
         <dt className="sr-only">Published on</dt>
         <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
@@ -23,7 +23,7 @@ export function BlogCard({
       <p className="prose max-w-none text-gray-500 dark:text-gray-400">
         {getDescriptionFromHtml(blog.content, 60)}
       </p>
-      {isLast ? null : (
+      {!isLast && (
         <hr className="my-4 border-gray-300 dark:border-gray-700" />
       )}
     </article>

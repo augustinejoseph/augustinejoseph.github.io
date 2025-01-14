@@ -8,7 +8,13 @@ export interface Project {
   features: string[];
   thumbnail: string;
   tags: [];
-  project_slug: string;
+  slug: string;
+  industry?: string;
+  businessImpact?: string;
+  additionalInfo?: string;
+  companyName?: string;
+  location?: string;
+  year?: string;
 }
 
 export interface BlogCardProps {

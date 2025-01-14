@@ -1,7 +1,9 @@
 import {
   GitHubIcon,
   LinkedInIcon,
+  MailIcon,
   MediumIcon,
+  WhatsAppIcon,
 } from "../components/icons";
 
 export const SOCIALS = [
@@ -19,6 +21,16 @@ export const SOCIALS = [
     label: "Medium",
     href: "https://augustinejoseph.medium.com/",
     icon: MediumIcon,
+  },
+  {
+    label: "Mail",
+    href: "mailto:developer.augustine@gmail.com",
+    icon: MailIcon,
+  },
+  {
+    label: "WhatApp",
+    href: "https://wa.me/916236083182",
+    icon: WhatsAppIcon,
   },
   // {
   //   label: "X",

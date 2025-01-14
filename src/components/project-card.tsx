@@ -1,38 +1,56 @@
 import { GitHubIcon, LinkIcon } from "@/components/icons";
 import { SocialLink } from "@/components/social-link";
 import { Project } from "@/types";
+import { trimString } from "@/utils";
 import Image from "next/image";
+import ProjectImage from "./project-image";
 
 type Props = {
   project: Project;
+  showThumbnailImage: boolean;
+  isLast: boolean;
+  showBottomBorder: boolean;
 };
 
-export const ProjectCard = ({ project }: Props) => {
+export const ProjectCard = (props: Props) => {
+  const {
+    project,
+    showThumbnailImage = true,
+    isLast,
+    showBottomBorder,
+  } = props;
   return (
     <div
       className="flex cursor-pointer flex-col rounded-xl transition hover:bg-zinc-50 hover:dark:bg-zinc-800/50"
       key={project.title}
     >
-      <Image
-        src={project.thumbnail}
-        alt={`Logo of ${project.title}`}
-        className="h-50 w-full rounded-t-lg object-cover bg-no-repeat"
-        width={0}
-        height={0}
-        unoptimized
-      />
+      {showThumbnailImage && (
+        <ProjectImage
+          src={project?.thumbnail || ""}
+          alt={project?.title || "Project Thumbnail"}
+          className="mb-6 h-auto w-full rounded-lg border-black shadow-lg"
+        />
+      )}
       <div className="p-4">
-        <a className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+        <div className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
           {project.title}
-        </a>
-        <div className=" z-10 mt-2 text-sm text-gray-500 dark:text-gray-400">
-          {project.description}
         </div>
+        <div className=" z-10 mt-2 text-sm text-gray-500 dark:text-gray-400">
+          {trimString(project.description, 225)}
+        </div>
+        {project?.companyName && project?.year && (
+          <div className="  mt-2 text-sm text-gray-500 dark:text-gray-400">
+            <span className="text-base  tracking-tight text-zinc-800 dark:text-zinc-100">
+              Company :{" "}
+            </span>
+            {project?.companyName} - {project?.year}
+          </div>
+        )}
         <div className="z-10 mb-6 mt-6 flex flex-wrap gap-1 ">
-          {project.tags.map((techStackItem) => (
+          {project.tags.map((techStackItem, index) => (
             <p
               className="hover:text-primary dark:hover:text-primary inline-flex items-center rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs leading-4 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-200"
-              key={techStackItem}
+              key={index}
             >
               {techStackItem}
             </p>
@@ -46,7 +64,7 @@ export const ProjectCard = ({ project }: Props) => {
               className="h-6 w-6 flex-none"
             />
           )}
-          {!project.liveLinkExpired && (
+          {!project?.liveLinkExpired && (
             <SocialLink
               icon={LinkIcon}
               href={project?.liveLink}
@@ -55,6 +73,9 @@ export const ProjectCard = ({ project }: Props) => {
           )}
         </div>
       </div>
+      {showBottomBorder && !isLast && (
+        <hr className="my-4 border-gray-300 dark:border-gray-700" />
+      )}
     </div>
   );
 };
