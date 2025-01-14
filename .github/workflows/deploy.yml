@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy
 
 on:
   push:
@@ -6,103 +6,44 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
+      - name: Setup Node
+        uses: actions/setup-node@v3
 
       - name: Install dependencies
-        run: npm install
+        uses: bahmutov/npm-install@v1
 
-      - name: Build and export static files
-        run: |
-          npm run build
-          npm run export
+      - name: Build project
+        run: npm run build
 
-      - name:  List out directory contents
-        run: ls -la out/
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v3
+        with:
+          name: production-files
+          path: ./out
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: production-files
+          path: ./out
 
       - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          # git config user.name "GitHub Actions"
-          # git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # # Copy built files
-          # cp -a out/. .
-
-          # ls -la
-
-          # # Stage all changes
-          # git add .
-
-          # # Create a descriptive commit message
-          # git commit -m "Deploy to GitHub Pages: [$(git rev-parse --short HEAD)]"
-
-          # # Fetch all branches (including remote)
-          # git fetch --all
-
-          # # Checkout gh-pages
-          # git checkout gh-pages
-
-          # # Handle potential conflicts (optional)
-          # if git merge --ff-only origin/gh-pages; then
-          #   echo "Fast-forward merge successful. No conflicts detected."
-          # else
-          #   echo "Merge conflicts detected! Resolve conflicts manually and run 'git add' for resolved files."
-          #   echo "Then, run 'git rebase --continue' to complete the rebase."
-          #   exit 1  # Exit with non-zero code to indicate failure
-          # fi
-
-          # # Push changes to gh-pages (force push if necessary)
-          # git push origin gh-pages --force
-
-          # # Print post-push status
-          # echo "Deployment status:"
-          # git status 
-
-
-
-
-
-          git config user.name "GitHub Actions"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git fetch --all
-
-          # Checkout gh-pages branch
-          git checkout gh-pages
-          echo "Before deletitng..."
-          ls -al
-
-          # Clean up existing files (except out folder)
-          rm -rf node_modules/
-          # find . ! -path "./out/*" ! -path "./.git/*" -delete
-
-          cd out
-
-          echo "List of file inside the out."
-          ls -al
-
-          # Stage all changes
-          git add -f .
-
-
-          # Create a descriptive commit message
-          git commit -m "Deploy to GitHub Pages: [$(git rev-parse --short HEAD)]"
-          git log
-
-          # Push changes to gh-pages (force push if necessary)
-          git push origin gh-pages --force-with-lease
-
-          # Print post-push status
-          echo "Deployment status:"
-          git status 
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
