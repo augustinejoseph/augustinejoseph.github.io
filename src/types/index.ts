@@ -25,3 +25,13 @@ export interface BlogCardProps {
   description: any;
   link: string;
 }
+
+export interface WorkExperience {
+  companyName: string;
+  url: string;
+  startingYear: number;
+  endingYear: null;
+  currentCompany: boolean;
+  logoUrl: string;
+  posistion: string;
+}

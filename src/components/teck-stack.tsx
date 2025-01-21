@@ -1,38 +1,52 @@
-// TechStack.tsx
-"use client";
+// import { cn } from "@/lib/utils";
+// import React from "react";
 
-import { useState } from 'react';
+// export interface Props {
+//   className?: string;
+//   icon: React.ElementType;
+//   label: string;
+//   children?: React.ReactNode;
+// }
 
-// Define the type for the TechStack component props
-interface TechStackProps {
-  stack: {
-    label: string;
-    icon: React.ComponentType<React.SVGProps<SVGSVGElement>>; // Make sure this is a valid React component type
-  };
+// export function TechStack({ className, icon: Icon, label, children }: Props) {
+//   return (
+//     <div className={cn(className, "group relative flex items-center")}>
+//       <div className="overflow-x-auto whitespace-nowrap scrollbar-hidden">
+//         <Icon className="h-6 w-6 fill-zinc-500 transition hover:fill-zinc-200" />
+//       </div>
+
+//       <span className="absolute opacity-0 group-hover:opacity-100">
+//         {label}
+//       </span>
+//       {children && <span className="ml-4">{children}</span>}
+//     </div>
+//   );
+// }
+
+
+import { cn } from "@/lib/utils";
+import React from "react";
+
+export interface Props {
+  className?: string;
+  icon: React.ElementType;
+  label: string;
+  children?: React.ReactNode;
 }
 
-const TechStack = ({ stack }: TechStackProps) => {
-  const [hover, setHover] = useState(false);
-
+export function TechStack({ className, icon: Icon, label, children }: Props) {
   return (
-    <div
-      className="relative flex items-center gap-2"
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-    >
-      {/* Tech Icon */}
-      <stack.icon className="w-10 h-10 text-gray-800 dark:text-white transition-colors duration-300" />
-      
-      {/* Label */}
-      <span
-        className={`absolute left-full ml-2 text-sm font-medium text-gray-800 dark:text-white transition-opacity duration-300 ${
-          hover ? 'opacity-100' : 'opacity-0'
-        }`}
-      >
-        {stack.label}
+    <div className={cn(className, "group relative flex items-center")}>
+      <div className="overflow-x-auto whitespace-nowrap scrollbar-hidden">
+        <Icon className="h-6 w-6 fill-zinc-500 transition hover:fill-zinc-200" />
+      </div>
+
+      {/* Hovered label with background */}
+      <span className="absolute bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-zinc-800 text-white text-xs rounded py-1 px-2 z-10">
+        {label}
       </span>
+
+      {children && <span className="ml-4">{children}</span>}
     </div>
   );
-};
-
-export default TechStack;
+}

@@ -1,5 +1,6 @@
 import { LINKS } from "@/lib/constants";
 import projectListV2 from "../../api/projectListV2.json";
+import experienceListV2 from "../../api/experienceListV2.json";
 
 export function getDescriptionFromHtml(htmlString: any, wordLimit = 100) {
   const strippedText = htmlString.replace(/<\/?[^>]+(>|$)/g, "");
@@ -24,9 +25,16 @@ export async function fetchArticles() {
 
 export async function fetchProjects() {
   const res = await fetch(LINKS.PROJECT);
-  // const projectsList = await res.json();
-  const projectsList = projectListV2;
+  const projectsList = await res.json();
+  // const projectsList = projectListV2;
   return projectsList;
+}
+
+export async function fetchExperienceList() {
+  const res = await fetch(LINKS.EXPERIENCE);
+  const experienceList = await res.json();
+  // const experienceList = experienceListV2;
+  return experienceList;
 }
 
 export function trimString(str: string, limit: number) {
