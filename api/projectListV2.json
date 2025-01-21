@@ -1,6 +1,6 @@
 [
   {
-    "title": "Globe V",
+    "title": "Globe V: Employee, Product, and Customer Management System",
     "tags": [
       "Python",
       "Django",
@@ -10,16 +10,52 @@
       "GIT",
       "Docker",
       "Axios",
-      "FTP"
+      "FTP",
+      "SAP"
     ],
-    "description": "Application created using React.js and Python Django to manage the employees, products and customers for a Nasdaq listed company.",
+    "description": "Globe V is a web application developed to streamline and manage key business operations for Ferroglobe, a global leader in the production of specialty metals. This platform facilitates efficient management of employees, products, and customer relations for a Nasdaq-listed multinational company. By leveraging React.js for the front-end and Django for the back-end, the application provides a responsive and user-friendly interface, while ensuring scalability and security at the enterprise level. The solution integrates with SAP for enterprise resource planning (ERP) and uses PostgreSQL for robust and reliable data storage. The app also includes FTP capabilities for file transfer and integrates Axios to handle API requests seamlessly.",
     "thumbnail": "https://i.postimg.cc/zBjPz7qJ/globev1.webp",
     "repo": "",
     "repoLinkExpired": true,
     "liveLink": "",
     "liveLinkExpired": true,
     "slug": "globev",
-    "features": ["Managing customers, employees and products"]
+    "features": [
+      "Employee Management: Manage employee profiles, track work hours, roles, and access levels.",
+      "Product Management: Track and manage product inventories, sales, and logistics. Integration with the company’s SAP system ensures real-time data synchronization for products across global operations.",
+      "Customer Management: Monitor and maintain customer profiles, sales history, and communication logs to enhance customer service and business relations.",
+      "Data Security & User Authentication: Secure login and role-based access to ensure data integrity, with user authentication handled by Django’s built-in security features.",
+      "Real-Time Updates: The application supports real-time updates for products and customer data, ensuring that business decisions are based on the most accurate and current information available.",
+      "Scalable Architecture: Built using a microservices architecture with Docker, the system ensures ease of deployment, scalability, and high availability, ideal for a multinational corporation like Ferroglobe."
+    ],
+    "businessImpact": "The Globe V application helps Ferroglobe manage its complex operations more efficiently, enabling cross-departmental collaboration, real-time data accessibility, and improved decision-making. By digitizing employee, product, and customer management, the company can optimize workflows, reduce administrative costs, and provide a better experience for both employees and customers.",
+    "additionalInfo": "Built using the latest industry-standard technologies, Globe V ensures the application can scale with Ferroglobe's growing operations, providing long-term value. The integration with SAP allows seamless business processes, enhancing the ERP system's efficiency by syncing crucial data in real-time. The application’s high-performance architecture supports Ferroglobe’s global presence, ensuring smooth operations across multiple regions.",
+    "companyName": "Ferroglobe",
+    "industry": "Specialty Metals",
+    "location": "Global",
+    "year": 2024,
+    "images": [
+      "https://i.postimg.cc/zBjPz7qJ/globev1.webp",
+      "https://i.postimg.cc/rm8QP4x7/globev10.webp",
+      "https://i.postimg.cc/HxBBDLtn/globev11.webp",
+      "https://i.postimg.cc/FzzG9QPZ/globev12.webp",
+      "https://i.postimg.cc/C52756XV/globev13.webp",
+      "https://i.postimg.cc/tRv2BYTm/globev14.webp",
+      "https://i.postimg.cc/657zgt46/globev15.webp",
+      "https://i.postimg.cc/bNKLjW1x/globev16.webp",
+      "https://i.postimg.cc/7Z09P9Np/globev17.webp",
+      "https://i.postimg.cc/d0FBhCHD/globev18.webp",
+      "https://i.postimg.cc/HLttXLRz/globev19.webp",
+      "https://i.postimg.cc/HnvZ5LJR/globev2.webp",
+      "https://i.postimg.cc/fLTfKNhN/globev20.webp",
+      "https://i.postimg.cc/MZ9rg9s5/globev3.webp",
+      "https://i.postimg.cc/4yx2mc3p/globev4.webp",
+      "https://i.postimg.cc/3JWbh2VT/globev5.webp",
+      "https://i.postimg.cc/8P3Xzjgr/globev6.webp",
+      "https://i.postimg.cc/0ywWMP9X/globev7.webp",
+      "https://i.postimg.cc/KYh9twzG/globev8.webp",
+      "https://i.postimg.cc/5t5sggYw/globev9.webp"
+    ]
   },
   {
     "title": "Data Lens",
@@ -42,7 +78,7 @@
       "Axios",
       "Microservice"
     ],
-    "description": "Datalens is a Article publishing website where any users can publish an article on anything and anybody can read the articles for free. The project was inspired from Medium.com which provided numerous quality resources. In this project I used technologies like microservices, React, Django, NodeJS, Webhooks, Docker and so on. ",
+    "description": "Data Lens is an article publishing website where users can publish articles on any topic, and anybody can read them for free. Inspired by Medium.com, it offers a platform for content creators to share their insights and monetize their free time. Technologies like microservices, React, Django, NodeJS, Docker, and AWS were used to build this scalable and efficient platform.",
     "thumbnail": "https://i.postimg.cc/4xKs3cCV/datalens.png",
     "repo": "https://github.com/augustinejoseph/datalens-article-publising-website",
     "repoLinkExpired": false,
@@ -53,18 +89,46 @@
       "Built for writers to share their thoughts and monetize their free time.",
       "Improved and responsive UI with a modern interface.",
       "Utilized technologies like React, Redux, Django, NodeJS, GraphQL, Rest API, PostgreSQL, MongoDB, NodeJS, JWT.",
-      "User Authentication is handled by Django, PostgreSQL and JWT Tokens.",
-      "Articles are managed using NodeJS server and MongoDB",
-      "Premium feature is introduced to remove ads and view premium articles.",
-      "",
+      "User Authentication is handled by Django, PostgreSQL, and JWT Tokens.",
+      "Articles are managed using NodeJS server and MongoDB.",
+      "Premium feature introduced to remove ads and view premium articles.",
       "Integrated Stripe webhooks to handle online payments securely.",
       "Implemented a headless architecture for enhanced flexibility and scalability."
+    ],
+    "businessImpact": "Data Lens provides a platform for content creators to easily publish and monetize their articles. By integrating a modern stack like React, NodeJS, and AWS, it offers a highly scalable and responsive system that can cater to growing user bases. The project enables content creators to reach a wide audience while also generating revenue through premium subscriptions and secure payment integration with Stripe.",
+    "additionalInfo": "This application utilizes a microservice architecture that makes it easy to scale individual services. By implementing AWS and Docker, it ensures high availability and fast deployment. The integration of GraphQL offers flexibility in data querying, while the use of JWT ensures secure and efficient user authentication.",
+    "companyName": "Self",
+    "industry": "Web Development",
+    "location": "Remote",
+    "year": 2023,
+    "images": [
+      "https://i.postimg.cc/4xKs3cCV/datalens.png",
+      "https://i.postimg.cc/v8zQ2MLg/datalens1.png",
+      "https://i.postimg.cc/k5dzdR7n/datalens10.png",
+      "https://i.postimg.cc/jjQ9qqjy/datalens11.png",
+      "https://i.postimg.cc/76KW7B06/datalens12.png",
+      "https://i.postimg.cc/k4JH2rVz/datalens13.png",
+      "https://i.postimg.cc/NFLPx1kx/datalens14.png",
+      "https://i.postimg.cc/vTj22cPw/datalens15.png",
+      "https://i.postimg.cc/Dy9Yq4Jq/datalens16.png",
+      "https://i.postimg.cc/fWgPRrMq/datalens17.png",
+      "https://i.postimg.cc/bw1VLYk4/datalens18.png",
+      "https://i.postimg.cc/6Q0jJHH0/datalens19.png",
+      "https://i.postimg.cc/zX2q5jQq/datalens2.png",
+      "https://i.postimg.cc/VN1GhyFv/datalens20.png",
+      "https://i.postimg.cc/qv90670Y/datalens3.png",
+      "https://i.postimg.cc/Z5yzmh3L/datalens4.png",
+      "https://i.postimg.cc/SRTbSSDg/datalens5.png",
+      "https://i.postimg.cc/YqZTbyVL/datalens6.png",
+      "https://i.postimg.cc/xTcWGSsS/datalens7.png",
+      "https://i.postimg.cc/DwGHDPkj/datalens8.png",
+      "https://i.postimg.cc/ryhBtpNJ/datalens9.png"
     ]
   },
   {
     "title": "Movie Finder",
     "tags": ["React", "Create React App", "Axios", "TMDB"],
-    "description": "A website that uses TMDB API to fetch movie data and shown using React.",
+    "description": "Movie Finder is a website that uses the TMDB API to fetch movie data and display it using React.js.",
     "thumbnail": "https://i.postimg.cc/NF7Jykqj/moviefinder.webp",
     "repo": "https://github.com/augustinejoseph/movie-finder-react",
     "repoLinkExpired": false,
@@ -72,8 +136,20 @@
     "liveLinkExpired": true,
     "slug": "movie_finder",
     "features": [
-      "Fetching Movie data using TMDB API",
-      "Displaying movie information using React"
+      "Fetching movie data using TMDB API.",
+      "Displaying movie information using React.js."
+    ],
+    "businessImpact": "Movie Finder allows users to search and explore movie data effortlessly. By utilizing TMDB's robust movie database, it serves as a simple yet powerful tool for film enthusiasts. The project demonstrates effective integration with third-party APIs and showcases how to build a smooth, responsive UI with React.js.",
+    "additionalInfo": "This application uses Axios to manage API calls and display movie details with minimal latency. The responsive design ensures that users on all devices can enjoy seamless navigation and interaction.",
+    "companyName": "Self",
+    "industry": "Web Development",
+    "location": "Remote",
+    "year": 2023,
+    "images": [
+      "https://i.postimg.cc/NF7Jykqj/moviefinder.webp",
+      "https://i.postimg.cc/d0b44xJ0/movie-finder1.webp",
+      "https://i.postimg.cc/wTg4CZLy/movie-finder2.webp",
+      "https://i.postimg.cc/nc2Sp2Gd/movie-finder3.webp"
     ]
   },
   {
@@ -91,21 +167,37 @@
       "Nginx",
       "Gunicorn"
     ],
-    "description": "An E-commerce website that sells footwears. Features like product view, payment, return are implemented.",
+    "description": "Happy Feets is an e-commerce website selling footwear, featuring product views, payment integration, returns, and more.",
     "thumbnail": "https://i.postimg.cc/4nRdhKnN/happyfeetz.png",
     "repo": "https://github.com/augustinejoseph/e-commerce-website",
     "repoLinkExpired": false,
     "liveLink": "http://happyfeetz.in",
     "liveLinkExpired": true,
+    "slug": "happy_feets",
     "features": [
-      "Fully functional e-commerce website",
-      "Features like login, cart, wishlist, Razorpay payment, Razorpay refund, return and so on...",
-      "Python | Django | React | PostgreSQL | GIT | GitHub | Razorpay |",
-      "AWS | Route53 | AWS | Nginx | Gunicorn",
-      "Build using Django and MVT architecture",
-      "Used technologies like Django, and PostgreSQL.",
-      "Integrated online payment and refund using Razorpay."
+      "Fully functional e-commerce website.",
+      "Features like login, cart, wishlist, Razorpay payment, refund, return, and more.",
+      "Built with Python, Django, React, PostgreSQL, and integrated Razorpay.",
+      "AWS hosting with Route53 and Nginx configuration.",
+      "Django and MVT architecture.",
+      "Integrated Razorpay for secure online payments and refunds."
     ],
-    "project_slug": "happy_feets"
+    "businessImpact": "Happy Feets is an e-commerce platform that brings seamless shopping experiences to users. The integration of Razorpay facilitates secure payments, while AWS hosting ensures reliable performance. With features like refund and return management, it provides both convenience and trust for customers.",
+    "additionalInfo": "The platform is hosted on AWS, with Route53 and Nginx for domain management and load balancing. Gunicorn ensures optimal performance for Django, and the use of PostgreSQL guarantees data integrity and fast processing.",
+    "companyName": "Self",
+    "industry": "E-commerce",
+    "location": "Remote",
+    "year": 2023,
+    "images": [
+      "https://i.postimg.cc/4nRdhKnN/happyfeetz.png",
+      "https://i.postimg.cc/VLv47d7H/happy-feets1.png",
+      "https://i.postimg.cc/hvdvj8D5/happy-feets10.png",
+      "https://i.postimg.cc/4dnmCkrZ/happy-feets11.png",
+      "https://i.postimg.cc/63STtbXZ/happy-feets12.png",
+      "https://i.postimg.cc/kgtsmLPQ/happy-feets2.png",
+      "https://i.postimg.cc/9FkbsCKX/happy-feets3.png",
+      "https://i.postimg.cc/R05RVGvj/happy-feets4.png",
+      "https://i.postimg.cc/4xzcwGTS/happy-feets5.png"
+    ]
   }
 ]

@@ -8,7 +8,13 @@ export interface Project {
   features: string[];
   thumbnail: string;
   tags: [];
-  project_slug: string;
+  slug: string;
+  industry?: string;
+  businessImpact?: string;
+  additionalInfo?: string;
+  companyName?: string;
+  location?: string;
+  year?: string;
 }
 
 export interface BlogCardProps {
@@ -18,4 +24,14 @@ export interface BlogCardProps {
   title: string;
   description: any;
   link: string;
+}
+
+export interface WorkExperience {
+  companyName: string;
+  url: string;
+  startingYear: number;
+  endingYear: null;
+  currentCompany: boolean;
+  logoUrl: string;
+  posistion: string;
 }

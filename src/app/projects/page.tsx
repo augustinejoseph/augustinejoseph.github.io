@@ -3,22 +3,17 @@ import { ProjectCard } from "../../components/project-card";
 import React from "react";
 import { Project } from "@/types";
 import { LINKS } from "@/lib/constants";
-
+import Link from "next/link";
+import { fetchProjects } from "@/utils";
 export const metadata = generatePageMetadata({
   title: "Projects",
   description:
     "View some of my notable open source web apps, npm packages, cli tools and more.",
 });
 
-async function fetchWebApps() {
-  const res = await fetch(LINKS.PROJECT);
-  const webApps = await res.json();
-  return webApps;
-}
-
 export default async function Projects() {
-  const webApps: Project[] = await fetchWebApps();
-  
+  const allProjects: Project[] = await fetchProjects();
+
   return (
     <React.Fragment>
       <section>
@@ -27,8 +22,17 @@ export default async function Projects() {
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 "
         >
-          {webApps.map((project, idx) => (
-            <ProjectCard project={project} key={idx} />
+          {allProjects.map((project, idx) => (
+            <div key={idx}>
+              <Link href={`/projects/${project.slug}`} passHref>
+                <ProjectCard
+                  project={project}
+                  showThumbnailImage={true}
+                  isLast={allProjects.length == idx}
+                  showBottomBorder = {false}
+                />
+              </Link>
+            </div>
           ))}
         </div>
       </section>
