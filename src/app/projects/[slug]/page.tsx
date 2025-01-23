@@ -19,6 +19,7 @@ interface Project {
   features?: string[];
   thumbnail?: string;
   slug: string;
+  isPortraitImages?: boolean;
 }
 
 const ProjectPage = async ({ params }: { params: { slug: string } }) => {
@@ -33,14 +34,14 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
   }
 
   const [firstImages, remainingImages] = project?.images
-    ? [project.images.slice(0, 4), project.images.slice(4)]
+    ? [project.images.slice(0, 8), project.images.slice(8)]
     : [[], []];
 
   return (
     <section className="space-y-6 p-6">
       {/* Header with Back Arrow and Title */}
       <div className="flex items-center space-x-3">
-        <Link href={`/projects`}>
+        <Link href={LINKS.PROJECTS_SECTION}>
           <>{BackArrow()}</>
         </Link>
         <h1 className="text-3xl font-bold">{project?.title}</h1>
@@ -54,14 +55,17 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
           className="mb-6 h-auto w-full rounded-lg border-black shadow-lg"
         />
       )}
+
       {/* Description */}
       {project?.description && (
         <p className="common-text">{project?.description}</p>
       )}
 
       {/* First Feature Image */}
-      {firstImages[0] && (
-        <div className="common-image-container">
+      {firstImages[0] && !project?.isPortraitImages && (
+        <div
+          className={`common-image-container ${project?.isPortraitImages && "flex gap-5"}`}
+        >
           <ProjectImage
             src={firstImages[0]}
             alt={`First Feature Image`}
@@ -69,6 +73,25 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
           />
         </div>
       )}
+
+      {firstImages[0] && project?.isPortraitImages && (
+        <div
+          className={`common-image-container ${project?.isPortraitImages && "flex gap-5"}`}
+        >
+          <ProjectImage
+            src={firstImages[0]}
+            alt={`First Feature Image`}
+            className="common-image"
+          />
+
+          <ProjectImage
+            src={firstImages[1]}
+            alt={`First Feature Image`}
+            className="common-image"
+          />
+        </div>
+      )}
+
       {/* Business Impact Section */}
       {project?.businessImpact && (
         <div>
@@ -78,16 +101,33 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
       )}
 
       {/* Second Feature Image */}
-      {firstImages[1] && (
+      {/* Second Feature Image */}
+      {firstImages[2] && !project?.isPortraitImages && (
         <div className="common-image-container">
           <ProjectImage
-            src={firstImages[1]}
-            alt={`Second Feature Image`}
+            src={firstImages[2]}
+            alt="Second Feature Image"
             className="common-image"
           />
         </div>
       )}
 
+      {firstImages[2] && project?.isPortraitImages && (
+        <div className="common-image-container flex gap-5">
+          <ProjectImage
+            src={firstImages[2]}
+            alt="Second Feature Image"
+            className="common-image"
+          />
+          {firstImages[3] && (
+            <ProjectImage
+              src={firstImages[3]}
+              alt="Third Feature Image"
+              className="common-image"
+            />
+          )}
+        </div>
+      )}
       {/* Additional Information Section */}
       {project?.additionalInfo && (
         <div>
@@ -97,13 +137,30 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
       )}
 
       {/* Third Feature Image */}
-      {firstImages[2] && (
+      {firstImages[4] && !project?.isPortraitImages && (
         <div className="common-image-container">
           <ProjectImage
-            src={firstImages[2]}
-            alt={`Third Feature Image`}
+            src={firstImages[4]}
+            alt="Third Feature Image"
             className="common-image"
           />
+        </div>
+      )}
+
+      {firstImages[4] && project?.isPortraitImages && (
+        <div className="common-image-container flex gap-5">
+          <ProjectImage
+            src={firstImages[4]}
+            alt="Third Feature Image"
+            className="common-image"
+          />
+          {firstImages[5] && (
+            <ProjectImage
+              src={firstImages[5]}
+              alt="Fourth Feature Image"
+              className="common-image"
+            />
+          )}
         </div>
       )}
 
@@ -140,13 +197,30 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
       )}
 
       {/* Fourth Feature Image */}
-      {firstImages[3] && (
+      {firstImages[6] && !project?.isPortraitImages && (
         <div className="common-image-container">
           <ProjectImage
-            src={firstImages[3]}
-            alt={`Fourth Feature Image`}
+            src={firstImages[6]}
+            alt="Fourth Feature Image"
             className="common-image"
           />
+        </div>
+      )}
+
+      {firstImages[6] && project?.isPortraitImages && (
+        <div className="common-image-container flex gap-5">
+          <ProjectImage
+            src={firstImages[6]}
+            alt="Fourth Feature Image"
+            className="common-image"
+          />
+          {firstImages[7] && (
+            <ProjectImage
+              src={firstImages[7]}
+              alt="Fifth Feature Image"
+              className="common-image"
+            />
+          )}
         </div>
       )}
 
@@ -176,7 +250,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
 
       {/* Remaining Images */}
       {remainingImages.length > 0 && (
-        <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="mt-6 grid grid-cols-1 gap-6 grid-cols-2">
           {remainingImages.map((image, index) => (
             <div key={index} className="remaining-image-container">
               <ProjectImage

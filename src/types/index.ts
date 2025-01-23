@@ -15,6 +15,7 @@ export interface Project {
   companyName?: string;
   location?: string;
   year?: string;
+  isPortraitImages?: boolean;
 }
 
 export interface BlogCardProps {

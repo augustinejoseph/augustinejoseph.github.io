@@ -1,5 +1,60 @@
 [
   {
+    "title": "Inaxes Mobile App",
+    "tags": [
+      "Android",
+      "iOS",
+      "Dashcam",
+      "Settings",
+      "React Native",
+      "Play Store",
+      "App Store",
+      "Redux"
+    ],
+    "description": "The Inaxes Mobile App is a companion application for Inaxes dashcams. It allows users to configure settings, view recorded footage, and manage device settings for various dashcam models equipped with Novotek and Mstar chipsets.",
+    "thumbnail": "https://i.postimg.cc/vmj4xWLN/inaxes.jpg",
+    "repo": "",
+    "repoLinkExpired": true,
+    "liveLink": "https://apps.apple.com/az/app/inaxes/id6475817104",
+    "liveLinkExpired": false,
+    "slug": "inaxes_mobile_app",
+    "features": [
+      " Configure video recording settings (resolution, frame rate, recording mode).",
+      " Adjust camera settings (exposure, brightness).",
+      " Configure parking mode settings (motion detection, time lapse).",
+      " Manage Wi-Fi connection and device settings.",
+      " View recorded videos directly on the mobile device.",
+      " Playback recorded videos in various speeds.",
+      " Download recorded videos to the mobile device.",
+      " Device diagnostics and troubleshooting.",
+      " Support for multiple dashcam models with different chipsets (Novotek, Mstar).",
+      " User-friendly interface with intuitive navigation."
+    ],
+    "businessImpact": "The InAxes Mobile App enhances user experience by simplifying device configuration and management, improving access to recorded footage and playback options, leading to increased customer satisfaction, brand loyalty, and app usage.",
+    "additionalInfo": "The Inaxes Mobile App leverages the latest mobile technologies to provide a seamless and intuitive user experience. It is designed to be compatible with a wide range of Android and iOS devices, ensuring accessibility for all users. The app supports multiple dashcam models and chipsets, making it a versatile solution for Inaxes customers.",
+    "companyName": "Inaxes",
+    "industry": "Automotive Technology",
+    "location": "Banglore, India",
+    "year": 2024,
+    "isPortraitImages" : true,
+    "images": [
+      "https://i.postimg.cc/C1Zb9r5J/inaxes1.webp",
+      "https://i.postimg.cc/LXZZxqQb/inaxes10.webp",
+      "https://i.postimg.cc/XqSBmVT7/inaxes11.webp",
+      "https://i.postimg.cc/rs1RLBkG/inaxes12.webp",
+      "https://i.postimg.cc/tRWxPxx1/inaxes13.webp",
+      "https://i.postimg.cc/9F2qBQdL/inaxes14.webp",
+      "https://i.postimg.cc/zvKKGLng/inaxes2.webp",
+      "https://i.postimg.cc/c1nQmzVL/inaxes3.webp",
+      "https://i.postimg.cc/cHVfW78W/inaxes4.webp",
+      "https://i.postimg.cc/3Jj2MvrM/inaxes5.webp",
+      "https://i.postimg.cc/6p9nBpT8/inaxes6.webp",
+      "https://i.postimg.cc/Qd05CZW0/inaxes7.webp",
+      "https://i.postimg.cc/1zXFN7GP/inaxes8.webp",
+      "https://i.postimg.cc/0N4wGGnS/inaxes9.webp"
+    ]
+  },
+  {
     "title": "Globe V: Employee, Product, and Customer Management System",
     "tags": [
       "Python",

@@ -33,7 +33,7 @@ export default async function Home() {
         width={100}
         height={100}
         alt="avatar"
-        className="mb-5 cursor-pointer rounded-full hover:grayscale"
+        className="mb-5 cursor-pointer rounded-full"
         unoptimized
       />
       <h1 className="text-2xl font-bold">Augustine Joseph</h1>
@@ -106,6 +106,7 @@ export default async function Home() {
           ))}
         </div>
       </div>
+
       <div className="my-8 w-full border-t border-gray-200 dark:border-gray-800" />
 
       {!isEmpty(workExperiences) && (
@@ -119,7 +120,7 @@ export default async function Home() {
       {!isEmpty(mediumArticles) && (
         <>
           <div>
-            <Link href={`/blog`}>
+            <Link href={LINKS.BLOG_SECTION}>
               <h2 className="mb-6 text-2xl font-bold">
                 Insights from My Recent Work
               </h2>
@@ -127,7 +128,7 @@ export default async function Home() {
             <ul>
               {mediumArticles.map((blog: any, index: number) => (
                 <li key={blog.slug} className="py-1">
-                  <Link href={`${blog.link}`}>
+                  <Link href={`${blog.link}`} target="_blank" rel="noopener noreferrer">
                     <BlogCard
                       blog={blog}
                       key={blog.slug}
@@ -138,37 +139,46 @@ export default async function Home() {
               ))}
             </ul>
           </div>
+          <Link href={LINKS.BLOG_SECTION}>
+            <span className="align-center flex justify-center">
+              View More...
+            </span>
+          </Link>
           <div className="my-8 w-full border-t border-gray-200 dark:border-gray-800" />
         </>
       )}
 
       {!isEmpty(projects) && (
-        <div>
-          <Link href={`/projects`}>
-            <h2 className="mb-6 text-2xl font-bold">
-              The Projects I’m Proud Of
-            </h2>
+        <>
+          <div>
+            <Link href={LINKS.PROJECTS_SECTION}>
+              <h2 className="mb-6 text-2xl font-bold">
+                The Projects I’m Proud Of
+              </h2>
+            </Link>
+            <ul>
+              {projects.map((project: any, index: number) => (
+                <li key={project.slug} className="py-1">
+                  <Link href={`${project.link}`}>
+                    <ProjectCard
+                      project={project}
+                      key={project.slug}
+                      isLast={index === projects.length - 1}
+                      showThumbnailImage={false}
+                      showBottomBorder={true}
+                    />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <Link href={LINKS.PROJECTS_SECTION}>
+            <span className="align-center flex justify-center">
+              View More...
+            </span>
           </Link>
-          <ul>
-            {projects.map((project: any, index: number) => (
-              <li key={project.slug} className="py-1">
-                <Link href={`${project.link}`}>
-                  <ProjectCard
-                    project={project}
-                    key={project.slug}
-                    isLast={index === projects.length - 1}
-                    showThumbnailImage={false}
-                    showBottomBorder={true}
-                  />
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        </>
       )}
     </section>
   );
-}
-function awaitfetchExperienceList(): WorkExperience[] {
-  throw new Error("Function not implemented.");
 }
