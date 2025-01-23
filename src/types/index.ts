@@ -1,22 +1,4 @@
-export interface Project {
-  // title: string;
-  // description: string;
-  // repo: string;
-  // liveLink: string;
-  // repoLinkExpired: boolean;
-  // liveLinkExpired: boolean;
-  // features: string[];
-  // thumbnail: string;
-  // tags: [];
-  // slug: string;
-  // industry?: string;
-  // businessImpact?: string;
-  // additionalInfo?: string;
-  // companyName?: string;
-  // location?: string;
-  // year?: string;
-  // isPortraitImages?: boolean;
-
+export interface Project { 
     title:            string;
     tags:             string[];
     description:      string;
@@ -29,7 +11,7 @@ export interface Project {
     features:         string[];
     businessImpact:   string;
     additionalInfo:   string;
-    companyName:      string;
+    companyName?:      string;
     industry:         string;
     location:         string;
     year:             number;

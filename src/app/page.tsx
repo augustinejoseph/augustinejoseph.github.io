@@ -17,6 +17,7 @@ import { Project, WorkExperience } from "@/types";
 import { TechStack } from "@/components/teck-stack";
 import WorkExperienceList from "@/components/work-experience";
 import { DownloadIcon } from "@/components/icons";
+import { Divider } from "@/components/divider";
 
 export default async function Home() {
   const allMediumArticles = await fetchArticles();
@@ -106,8 +107,7 @@ export default async function Home() {
           ))}
         </div>
       </div>
-
-      <div className="my-8 w-full border-t border-gray-200 dark:border-gray-800" />
+      <Divider />
 
       {!isEmpty(workExperiences) && (
         <div className="my-8">
@@ -115,8 +115,7 @@ export default async function Home() {
         </div>
       )}
 
-      <div className="my-8 w-full border-t border-gray-200 dark:border-gray-800" />
-
+      <Divider />
       {!isEmpty(mediumArticles) && (
         <>
           <div>
@@ -128,7 +127,11 @@ export default async function Home() {
             <ul>
               {mediumArticles.map((blog: any, index: number) => (
                 <li key={blog.slug} className="py-1">
-                  <Link href={`${blog.link}`} target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href={`${blog.link}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <BlogCard
                       blog={blog}
                       key={blog.slug}
@@ -144,7 +147,7 @@ export default async function Home() {
               View More...
             </span>
           </Link>
-          <div className="my-8 w-full border-t border-gray-200 dark:border-gray-800" />
+          <Divider />{" "}
         </>
       )}
 
@@ -159,15 +162,13 @@ export default async function Home() {
             <ul>
               {projects.map((project: any, index: number) => (
                 <li key={project.slug} className="py-1">
-                  <Link href={`${project.link}`}>
-                    <ProjectCard
-                      project={project}
-                      key={project.slug}
-                      isLast={index === projects.length - 1}
-                      showThumbnailImage={false}
-                      showBottomBorder={true}
-                    />
-                  </Link>
+                  <ProjectCard
+                    project={project}
+                    key={project.slug}
+                    isLast={index === projects.length - 1}
+                    showThumbnailImage={false}
+                    showBottomBorder={true}
+                  />
                 </li>
               ))}
             </ul>

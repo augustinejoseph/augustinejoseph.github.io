@@ -5,6 +5,7 @@ import ProjectImage from "@/components/project-image";
 import Link from "next/link";
 import { BackArrow } from "@/components/icons";
 import { Metadata } from "next";
+import { Divider } from "@/components/divider";
 
 interface Project {
   title: string;
@@ -33,11 +34,12 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
     notFound();
   }
 
-  const [firstImages, remainingImages] = project?.images && project.images.length > 0
-  ? project?.isPortraitImages
-    ? [project.images.slice(0, 8), project.images.slice(8)]  // for portrait images, take 8 images
-    : [project.images.slice(0, 4), project.images.slice(4)]  // for non-portrait images, take 4 images
-  : [[], []];
+  const [firstImages, remainingImages] =
+    project?.images && project.images.length > 0
+      ? project?.isPortraitImages
+        ? [project.images.slice(0, 8), project.images.slice(8)] // for portrait images, take 8 images
+        : [project.images.slice(0, 4), project.images.slice(4)] // for non-portrait images, take 4 images
+      : [[], []];
 
   return (
     <section className="space-y-6 p-6">
@@ -60,7 +62,10 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
 
       {/* Description */}
       {project?.description && (
-        <p className="common-text">{project?.description}</p>
+        <>
+          <p className="common-text">{project?.description}</p>
+          <Divider />{" "}
+        </>
       )}
 
       {/* First Feature Image */}
@@ -86,11 +91,11 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
             className="common-image"
           />
           {firstImages[1] && (
-          <ProjectImage
-            src={firstImages[1]}
-            alt={`First Feature Image`}
-            className="common-image"
-          />
+            <ProjectImage
+              src={firstImages[1]}
+              alt={`First Feature Image`}
+              className="common-image"
+            />
           )}
         </div>
       )}
@@ -100,6 +105,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
         <div>
           <h3 className="common-title">Business Impact:</h3>
           <p className="common-text">{project?.businessImpact}</p>
+          <Divider />{" "}
         </div>
       )}
 
@@ -135,6 +141,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
         <div>
           <h3 className="common-title">Additional Information:</h3>
           <p className="common-text">{project?.additionalInfo}</p>
+          <Divider />{" "}
         </div>
       )}
 
@@ -178,6 +185,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
               </li>
             ))}
           </ul>
+          <Divider />{" "}
         </div>
       )}
 
@@ -195,6 +203,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
               </p>
             ))}
           </div>
+          <Divider />{" "}
         </div>
       )}
 
@@ -227,32 +236,58 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
       )}
 
       {/* Company Details Section */}
-      {(project.companyName || project.industry) && (
-        <div className="mt-6">
-          <div className="space-y-2">
+      <div className="mt-6">
+        <div className="space-y-2">
+          {project.companyName && (
             <p className="common-text">
               <strong className="common-sub-title">Company Name:</strong>{" "}
-              {project?.companyName}
+              {project.companyName}
             </p>
+          )}
+          {project.industry && (
             <p className="common-text">
               <strong className="common-sub-title">Industry:</strong>{" "}
-              {project?.industry}
+              {project.industry}
             </p>
+          )}
+          {project.location && (
             <p className="common-text">
               <strong className="common-sub-title">Location:</strong>{" "}
-              {project?.location}
+              {project.location}
             </p>
+          )}
+          {project.year && (
             <p className="common-text">
-              <strong className="common-sub-title">Year:</strong>{" "}
-              {project?.year}
+              <strong className="common-sub-title">Year:</strong> {project.year}
             </p>
-          </div>
+          )}
+          {/* {project.liveLink && (
+            <p className="common-text">
+              <strong className="common-sub-title">Live Link:</strong>{" "}
+              <a href={project.liveLink}>Live</a>
+            </p>
+          )} */}
+          {project.liveLink && !project.liveLinkExpired && (
+            <p className="text-sm  text-gray-500 dark:text-gray-400">
+              <strong className="common-sub-title">Live Project:</strong>{" "}
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-blue-600 transition-colors duration-300 hover:text-blue-800"
+              >
+                View Live Project
+              </a>
+            </p>
+          )}
         </div>
-      )}
+        <Divider />{" "}
+      </div>
 
       {/* Remaining Images */}
+      <h3 className="common-title">More Images:</h3>
       {remainingImages.length > 0 && (
-        <div className="mt-6 grid grid-cols-1 gap-6 grid-cols-2">
+        <div className="mt-6 grid grid-cols-2 gap-6">
           {remainingImages.map((image, index) => (
             <div key={index} className="remaining-image-container">
               <ProjectImage
