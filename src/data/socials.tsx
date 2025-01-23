@@ -3,6 +3,7 @@ import {
   LinkedInIcon,
   MailIcon,
   MediumIcon,
+  PhoneIcon,
   WhatsAppIcon,
 } from "../components/icons";
 
@@ -32,15 +33,9 @@ export const SOCIALS = [
     href: "https://wa.me/916238083182",
     icon: WhatsAppIcon,
   },
-  // {
-  //   label: "X",
-  //   href: "https://x.com/adarsha_ach",
-  //   icon: XIcon,
-  // },
-
-  // {
-  //   label: "Instagram",
-  //   href: "https://www.instagram.com/adarsha.acharya.01/",
-  //   icon: InstagramIcon,
-  // },
+  {
+    label: "Phone",
+    href: "tel:916238083182",
+    icon: PhoneIcon,
+  },
 ];
