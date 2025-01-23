@@ -77,7 +77,9 @@ export default async function Home() {
             aria-label={`Follow on ${social.label}`}
             href={social.href}
             icon={social.icon}
-          />
+          >
+            {social.label}
+          </SocialLink>
         ))}
       </div>
       <p className="mb-5 mt-4 inline-block cursor-pointer ">
@@ -92,18 +94,20 @@ export default async function Home() {
       {/* <div className="my-8 w-full border-t border-gray-200 dark:border-gray-800" /> */}
 
       <div>
-        <h2 className="mb-6 text-2xl font-bold">
+        <h2 className="m-0 p-0 text-2xl font-bold">
           Building with Modern Technologies
         </h2>
 
-        <div className="hide-scrollbar mb-2 mt-4 flex space-x-4 overflow-auto">
+        <div className="hide-scrollbar mb-2 mt-4 flex space-x-4 overflow-x-auto pl-5">
           {STACKS.map((stack) => (
             <TechStack
               key={stack.label}
-              aria-label={`Follow on ${stack.label}`}
+              aria-label={`Technology - ${stack.label}`}
               icon={stack.icon}
               label={stack.label}
-            />
+            >
+              <span>{stack.label}</span>
+            </TechStack>
           ))}
         </div>
       </div>
