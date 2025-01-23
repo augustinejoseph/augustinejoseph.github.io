@@ -25,8 +25,8 @@ export async function fetchArticles() {
 
 export async function fetchProjects() {
   const res = await fetch(LINKS.PROJECT);
-  const projectsList = await res.json();
-  // const projectsList = projectListV2;
+  // const projectsList = await res.json();
+  const projectsList = projectListV2;
   return projectsList;
 }
 

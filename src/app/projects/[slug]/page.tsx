@@ -33,9 +33,11 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
     notFound();
   }
 
-  const [firstImages, remainingImages] = project?.images
-    ? [project.images.slice(0, 8), project.images.slice(8)]
-    : [[], []];
+  const [firstImages, remainingImages] = project?.images && project.images.length > 0
+  ? project?.isPortraitImages
+    ? [project.images.slice(0, 8), project.images.slice(8)]  // for portrait images, take 8 images
+    : [project.images.slice(0, 4), project.images.slice(4)]  // for non-portrait images, take 4 images
+  : [[], []];
 
   return (
     <section className="space-y-6 p-6">
@@ -83,12 +85,13 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
             alt={`First Feature Image`}
             className="common-image"
           />
-
+          {firstImages[1] && (
           <ProjectImage
             src={firstImages[1]}
             alt={`First Feature Image`}
             className="common-image"
           />
+          )}
         </div>
       )}
 
@@ -101,11 +104,10 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
       )}
 
       {/* Second Feature Image */}
-      {/* Second Feature Image */}
-      {firstImages[2] && !project?.isPortraitImages && (
+      {firstImages[1] && !project?.isPortraitImages && (
         <div className="common-image-container">
           <ProjectImage
-            src={firstImages[2]}
+            src={firstImages[1]}
             alt="Second Feature Image"
             className="common-image"
           />
@@ -137,10 +139,10 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
       )}
 
       {/* Third Feature Image */}
-      {firstImages[4] && !project?.isPortraitImages && (
+      {firstImages[2] && !project?.isPortraitImages && (
         <div className="common-image-container">
           <ProjectImage
-            src={firstImages[4]}
+            src={firstImages[2]}
             alt="Third Feature Image"
             className="common-image"
           />
@@ -197,10 +199,10 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
       )}
 
       {/* Fourth Feature Image */}
-      {firstImages[6] && !project?.isPortraitImages && (
+      {firstImages[3] && !project?.isPortraitImages && (
         <div className="common-image-container">
           <ProjectImage
-            src={firstImages[6]}
+            src={firstImages[3]}
             alt="Fourth Feature Image"
             className="common-image"
           />
@@ -256,7 +258,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
               <ProjectImage
                 src={image}
                 alt={`Remaining Feature Image ${index + 1}`}
-                className="remaining-image"
+                className="common-image"
               />
             </div>
           ))}

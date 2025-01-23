@@ -1,6 +1,6 @@
 [
   {
-    "title": "Inaxes Mobile App",
+    "title": "Inaxes – Android and iOS App for Car Dashcams",
     "tags": [
       "Android",
       "iOS",
@@ -39,23 +39,23 @@
     "isPortraitImages" : true,
     "images": [
       "https://i.postimg.cc/C1Zb9r5J/inaxes1.webp",
-      "https://i.postimg.cc/LXZZxqQb/inaxes10.webp",
+      "https://i.postimg.cc/zvKKGLng/inaxes2.webp",
+      "https://i.postimg.cc/3Jj2MvrM/inaxes5.webp",
+      "https://i.postimg.cc/cHVfW78W/inaxes4.webp",
+      "https://i.postimg.cc/c1nQmzVL/inaxes3.webp",
       "https://i.postimg.cc/XqSBmVT7/inaxes11.webp",
       "https://i.postimg.cc/rs1RLBkG/inaxes12.webp",
-      "https://i.postimg.cc/tRWxPxx1/inaxes13.webp",
-      "https://i.postimg.cc/9F2qBQdL/inaxes14.webp",
-      "https://i.postimg.cc/zvKKGLng/inaxes2.webp",
-      "https://i.postimg.cc/c1nQmzVL/inaxes3.webp",
-      "https://i.postimg.cc/cHVfW78W/inaxes4.webp",
-      "https://i.postimg.cc/3Jj2MvrM/inaxes5.webp",
+      "https://i.postimg.cc/tRWxPxx1/inaxes13.webp",      
       "https://i.postimg.cc/6p9nBpT8/inaxes6.webp",
       "https://i.postimg.cc/Qd05CZW0/inaxes7.webp",
+      "https://i.postimg.cc/LXZZxqQb/inaxes10.webp",
       "https://i.postimg.cc/1zXFN7GP/inaxes8.webp",
-      "https://i.postimg.cc/0N4wGGnS/inaxes9.webp"
+      "https://i.postimg.cc/0N4wGGnS/inaxes9.webp",
+      "https://i.postimg.cc/9F2qBQdL/inaxes14.webp"
     ]
   },
   {
-    "title": "Globe V: Employee, Product, and Customer Management System",
+    "title": "Globe V - Employee, Product, and Customer Management System",
     "tags": [
       "Python",
       "Django",
@@ -68,8 +68,9 @@
       "FTP",
       "SAP"
     ],
+    "isPortraitImages" : false,
     "description": "Globe V is a web application developed to streamline and manage key business operations for Ferroglobe, a global leader in the production of specialty metals. This platform facilitates efficient management of employees, products, and customer relations for a Nasdaq-listed multinational company. By leveraging React.js for the front-end and Django for the back-end, the application provides a responsive and user-friendly interface, while ensuring scalability and security at the enterprise level. The solution integrates with SAP for enterprise resource planning (ERP) and uses PostgreSQL for robust and reliable data storage. The app also includes FTP capabilities for file transfer and integrates Axios to handle API requests seamlessly.",
-    "thumbnail": "https://i.postimg.cc/zBjPz7qJ/globev1.webp",
+    "thumbnail": "https://i.postimg.cc/0214yJT5/globev-thumbnail.webp",
     "repo": "",
     "repoLinkExpired": true,
     "liveLink": "",
@@ -113,7 +114,7 @@
     ]
   },
   {
-    "title": "Data Lens",
+    "title": "DataLens – Article Publishing Site",
     "tags": [
       "Python",
       "Django",
@@ -133,6 +134,7 @@
       "Axios",
       "Microservice"
     ],
+    "isPortraitImages" : false,
     "description": "Data Lens is an article publishing website where users can publish articles on any topic, and anybody can read them for free. Inspired by Medium.com, it offers a platform for content creators to share their insights and monetize their free time. Technologies like microservices, React, Django, NodeJS, Docker, and AWS were used to build this scalable and efficient platform.",
     "thumbnail": "https://i.postimg.cc/4xKs3cCV/datalens.png",
     "repo": "https://github.com/augustinejoseph/datalens-article-publising-website",
@@ -157,31 +159,30 @@
     "location": "Remote",
     "year": 2023,
     "images": [
-      "https://i.postimg.cc/4xKs3cCV/datalens.png",
       "https://i.postimg.cc/v8zQ2MLg/datalens1.png",
+      "https://i.postimg.cc/zX2q5jQq/datalens2.png",
+      "https://i.postimg.cc/ryhBtpNJ/datalens9.png",
+      "https://i.postimg.cc/Dy9Yq4Jq/datalens16.png",
+      "https://i.postimg.cc/fWgPRrMq/datalens17.png",
+      "https://i.postimg.cc/bw1VLYk4/datalens18.png",
+      "https://i.postimg.cc/Z5yzmh3L/datalens4.png",
+      "https://i.postimg.cc/NFLPx1kx/datalens14.png",
+      "https://i.postimg.cc/qv90670Y/datalens3.png",
+      "https://i.postimg.cc/vTj22cPw/datalens15.png",
       "https://i.postimg.cc/k5dzdR7n/datalens10.png",
       "https://i.postimg.cc/jjQ9qqjy/datalens11.png",
       "https://i.postimg.cc/76KW7B06/datalens12.png",
       "https://i.postimg.cc/k4JH2rVz/datalens13.png",
-      "https://i.postimg.cc/NFLPx1kx/datalens14.png",
-      "https://i.postimg.cc/vTj22cPw/datalens15.png",
-      "https://i.postimg.cc/Dy9Yq4Jq/datalens16.png",
-      "https://i.postimg.cc/fWgPRrMq/datalens17.png",
-      "https://i.postimg.cc/bw1VLYk4/datalens18.png",
       "https://i.postimg.cc/6Q0jJHH0/datalens19.png",
-      "https://i.postimg.cc/zX2q5jQq/datalens2.png",
       "https://i.postimg.cc/VN1GhyFv/datalens20.png",
-      "https://i.postimg.cc/qv90670Y/datalens3.png",
-      "https://i.postimg.cc/Z5yzmh3L/datalens4.png",
       "https://i.postimg.cc/SRTbSSDg/datalens5.png",
       "https://i.postimg.cc/YqZTbyVL/datalens6.png",
       "https://i.postimg.cc/xTcWGSsS/datalens7.png",
-      "https://i.postimg.cc/DwGHDPkj/datalens8.png",
-      "https://i.postimg.cc/ryhBtpNJ/datalens9.png"
+      "https://i.postimg.cc/DwGHDPkj/datalens8.png"
     ]
   },
   {
-    "title": "Movie Finder",
+    "title": "Movie Finder – Find Movies and TV Show Details",
     "tags": ["React", "Create React App", "Axios", "TMDB"],
     "description": "Movie Finder is a website that uses the TMDB API to fetch movie data and display it using React.js.",
     "thumbnail": "https://i.postimg.cc/NF7Jykqj/moviefinder.webp",
@@ -194,6 +195,7 @@
       "Fetching movie data using TMDB API.",
       "Displaying movie information using React.js."
     ],
+    "isPortraitImages" : false,
     "businessImpact": "Movie Finder allows users to search and explore movie data effortlessly. By utilizing TMDB's robust movie database, it serves as a simple yet powerful tool for film enthusiasts. The project demonstrates effective integration with third-party APIs and showcases how to build a smooth, responsive UI with React.js.",
     "additionalInfo": "This application uses Axios to manage API calls and display movie details with minimal latency. The responsive design ensures that users on all devices can enjoy seamless navigation and interaction.",
     "companyName": "Self",
@@ -201,14 +203,13 @@
     "location": "Remote",
     "year": 2023,
     "images": [
-      "https://i.postimg.cc/NF7Jykqj/moviefinder.webp",
       "https://i.postimg.cc/d0b44xJ0/movie-finder1.webp",
       "https://i.postimg.cc/wTg4CZLy/movie-finder2.webp",
       "https://i.postimg.cc/nc2Sp2Gd/movie-finder3.webp"
     ]
   },
   {
-    "title": "Happy Feets",
+    "title": "Happy Feets – eCommerce Site to Sell Shoes",
     "tags": [
       "Python",
       "Django",
@@ -237,6 +238,7 @@
       "Django and MVT architecture.",
       "Integrated Razorpay for secure online payments and refunds."
     ],
+    "isPortraitImages" : false,
     "businessImpact": "Happy Feets is an e-commerce platform that brings seamless shopping experiences to users. The integration of Razorpay facilitates secure payments, while AWS hosting ensures reliable performance. With features like refund and return management, it provides both convenience and trust for customers.",
     "additionalInfo": "The platform is hosted on AWS, with Route53 and Nginx for domain management and load balancing. Gunicorn ensures optimal performance for Django, and the use of PostgreSQL guarantees data integrity and fast processing.",
     "companyName": "Self",
@@ -244,15 +246,23 @@
     "location": "Remote",
     "year": 2023,
     "images": [
-      "https://i.postimg.cc/4nRdhKnN/happyfeetz.png",
       "https://i.postimg.cc/VLv47d7H/happy-feets1.png",
-      "https://i.postimg.cc/hvdvj8D5/happy-feets10.png",
+      "https://i.postimg.cc/kgtsmLPQ/happy-feets2.png",
+      "https://i.postimg.cc/4nRdhKnN/happyfeetz.png",
+
+      "https://i.postimg.cc/sDrCMLkh/happy-feets7.png",
+      "https://i.postimg.cc/pXJbzZv1/happy-feets8.png",
+      "https://i.postimg.cc/fRW4K9TW/happy-feets9.png",
+      "https://i.postimg.cc/0yVTHybY/happy-feets10.png",
+
+
+
       "https://i.postimg.cc/4dnmCkrZ/happy-feets11.png",
       "https://i.postimg.cc/63STtbXZ/happy-feets12.png",
-      "https://i.postimg.cc/kgtsmLPQ/happy-feets2.png",
       "https://i.postimg.cc/9FkbsCKX/happy-feets3.png",
       "https://i.postimg.cc/R05RVGvj/happy-feets4.png",
-      "https://i.postimg.cc/4xzcwGTS/happy-feets5.png"
+      "https://i.postimg.cc/4xzcwGTS/happy-feets5.png",
+      "https://i.postimg.cc/WprPbVHV/happy-feets6.png"
     ]
   }
 ]
