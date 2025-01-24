@@ -30,12 +30,12 @@ export const SOCIALS = [
   },
   {
     label: "WhatApp",
-    href: "https://wa.me/916238083182",
+    href: "https://wa.me/+916238083182",
     icon: WhatsAppIcon,
   },
   {
     label: "Phone",
-    href: "tel:916238083182",
+    href: "tel:+916238083182",
     icon: PhoneIcon,
   },
 ];
