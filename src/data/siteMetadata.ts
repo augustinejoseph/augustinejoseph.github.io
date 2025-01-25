@@ -6,7 +6,7 @@ export const siteMetadata = {
   description:
     "Augustine Joseph - Fullstack developer passionate about creating and sharing things on internet",
   keywords: [
-    `Augustine Joseph, Augustine, Joseph, augustinejoseph, Joseph Augustine, Agastin, Augustin, augustinejosepb.github.io, augustine.com, developer, agastine joseph`,
+    `Augustine Joseph, Augustine, Joseph, augustinejoseph, Joseph Augustine, Agastin, Augustin, augustinejoseph.github.io, augustine.com, developer, agastine joseph`,
   ],
   social: {
     email: "developer.augustine@gmail.com",

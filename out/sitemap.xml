@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://augustinejoseph.github.io/</loc>
-<lastmod>2025-01-23</lastmod>
+<lastmod>2025-01-25</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/blog</loc>
-<lastmod>2025-01-23</lastmod>
+<lastmod>2025-01-25</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects</loc>
-<lastmod>2025-01-23</lastmod>
+<lastmod>2025-01-25</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.medium.com/nextjs-seo-optimization-f4714b267766?source=rss-a466d6a4ac30------2</loc>
@@ -51,5 +51,25 @@
 <url>
 <loc>https://augustinejoseph.medium.com/everything-about-array-8c9718a6c20f?source=rss-a466d6a4ac30------2</loc>
 <lastmod>2024-05-26 06:24:52</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.github.io/projects/inaxes_mobile_app</loc>
+<lastmod>2025-01-25</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.github.io/projects/globev</loc>
+<lastmod>2025-01-25</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.github.io/projects/data_lens</loc>
+<lastmod>2025-01-25</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.github.io/projects/movie_finder</loc>
+<lastmod>2025-01-25</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.github.io/projects/happy_feets</loc>
+<lastmod>2025-01-25</lastmod>
 </url>
 </urlset>
