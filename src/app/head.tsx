@@ -4,7 +4,7 @@ export default function Head() {
       <link
         rel="apple-touch-icon"
         sizes="76x76"
-        href={'https://i.postimg.cc/T3Xcz5Dd/apple-touch-icon.png'}
+        href={"https://i.postimg.cc/T3Xcz5Dd/apple-touch-icon.png"}
       />
       <link
         rel="icon"
@@ -39,7 +39,7 @@ export default function Head() {
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta
         name="google-site-verification"
-        content="br9AjaAyJgS4OVigpXtHmm2DwdzuzMqzpK4G77lD2TY"
+        content="iHTQUOykXVIBaq6LuY67eHHO8SdvcnjS-_od_AZaT74"
       />
     </>
   );

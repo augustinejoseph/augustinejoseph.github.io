@@ -15,7 +15,8 @@ export const SOCIALS = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/augustinjoseph/",
+    href: "https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=augustinjoseph",
+    // href: "https://www.linkedin.com/in/augustinjoseph/",
     icon: LinkedInIcon,
   },
   {
