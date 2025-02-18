@@ -18,6 +18,8 @@ import { TechStack } from "@/components/teck-stack";
 import WorkExperienceList from "@/components/work-experience";
 import { DownloadIcon } from "@/components/icons";
 import { Divider } from "@/components/divider";
+import { Metadata } from "next";
+import { siteMetadata } from "@/data/siteMetadata";
 
 export default async function Home() {
   const allMediumArticles = await fetchArticles();
@@ -186,4 +188,28 @@ export default async function Home() {
       )}
     </section>
   );
+}
+
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  return {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    keywords: siteMetadata.keywords.join(", "),
+    openGraph: {
+      title: siteMetadata.title,
+      description: siteMetadata.description,
+      type: "website",
+      url: siteMetadata.siteUrl,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: siteMetadata.title,
+      description: siteMetadata.description,
+    },
+  };
 }
