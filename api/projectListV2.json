@@ -1,6 +1,6 @@
 [
   {
-    "title": "Inaxes – Android and iOS App for Car Dashcams",
+    "title": "Dashcam – Android and iOS App for Car",
     "tags": [
       "Android",
       "iOS",
@@ -11,8 +11,8 @@
       "App Store",
       "Redux"
     ],
-    "description": "The Inaxes Mobile App is a companion application for Inaxes dashcams. It allows users to configure settings, view recorded footage, and manage device settings for various dashcam models equipped with Novotek and Mstar chipsets.",
-    "thumbnail": "https://i.postimg.cc/vmj4xWLN/inaxes.jpg",
+    "description": "The dashcam Mobile App allows users to configure settings, view recorded footage, and manage device settings for various dashcam models equipped with different chipsets.",
+    "thumbnail": "https://i.postimg.cc/tgS4zjfj/inaxes-thumbnail.jpg",
     "repo": "",
     "repoLinkExpired": true,
     "liveLink": "https://apps.apple.com/az/app/inaxes/id6475817104",
@@ -30,32 +30,19 @@
       " Support for multiple dashcam models with different chipsets (Novotek, Mstar).",
       " User-friendly interface with intuitive navigation."
     ],
-    "businessImpact": "The InAxes Mobile App enhances user experience by simplifying device configuration and management, improving access to recorded footage and playback options, leading to increased customer satisfaction, brand loyalty, and app usage.",
-    "additionalInfo": "The Inaxes Mobile App leverages the latest mobile technologies to provide a seamless and intuitive user experience. It is designed to be compatible with a wide range of Android and iOS devices, ensuring accessibility for all users. The app supports multiple dashcam models and chipsets, making it a versatile solution for Inaxes customers.",
-    "companyName": "Inaxes",
+    "businessImpact": "The dashcam Mobile App enhances user experience by simplifying device configuration and management, improving access to recorded footage and playback options, leading to increased customer satisfaction, brand loyalty, and app usage.",
+    "additionalInfo": "The dashcam Mobile App leverages the latest mobile technologies to provide a seamless and intuitive user experience. It is designed to be compatible with a wide range of Android and iOS devices, ensuring accessibility for all users. The app supports multiple dashcam models and chipsets, making it a versatile solution for Inaxes customers.",
+    "companyName": "-",
     "industry": "Automotive Technology",
     "location": "Banglore, India",
     "year": 2024,
     "isPortraitImages" : true,
     "images": [
-      "https://i.postimg.cc/C1Zb9r5J/inaxes1.webp",
-      "https://i.postimg.cc/zvKKGLng/inaxes2.webp",
-      "https://i.postimg.cc/3Jj2MvrM/inaxes5.webp",
-      "https://i.postimg.cc/cHVfW78W/inaxes4.webp",
-      "https://i.postimg.cc/c1nQmzVL/inaxes3.webp",
-      "https://i.postimg.cc/XqSBmVT7/inaxes11.webp",
-      "https://i.postimg.cc/rs1RLBkG/inaxes12.webp",
-      "https://i.postimg.cc/tRWxPxx1/inaxes13.webp",      
-      "https://i.postimg.cc/6p9nBpT8/inaxes6.webp",
-      "https://i.postimg.cc/Qd05CZW0/inaxes7.webp",
-      "https://i.postimg.cc/LXZZxqQb/inaxes10.webp",
-      "https://i.postimg.cc/1zXFN7GP/inaxes8.webp",
-      "https://i.postimg.cc/0N4wGGnS/inaxes9.webp",
-      "https://i.postimg.cc/9F2qBQdL/inaxes14.webp"
+      
     ]
   },
   {
-    "title": "Globe V - Employee, Product, and Customer Management System",
+    "title": "End-to-End Solution for Silicon Manufacturing Company",
     "tags": [
       "Python",
       "Django",
@@ -69,8 +56,8 @@
       "SAP"
     ],
     "isPortraitImages" : false,
-    "description": "Globe V is a web application developed to streamline and manage key business operations for Ferroglobe, a global leader in the production of specialty metals. This platform facilitates efficient management of employees, products, and customer relations for a Nasdaq-listed multinational company. By leveraging React.js for the front-end and Django for the back-end, the application provides a responsive and user-friendly interface, while ensuring scalability and security at the enterprise level. The solution integrates with SAP for enterprise resource planning (ERP) and uses PostgreSQL for robust and reliable data storage. The app also includes FTP capabilities for file transfer and integrates Axios to handle API requests seamlessly.",
-    "thumbnail": "https://i.postimg.cc/0214yJT5/globev-thumbnail.webp",
+    "description": "A web application developed to streamline and manage key business operations for Ferroglobe, a global leader in the production of specialty metals. This platform facilitates efficient management of employees, products, and customer relations for a Nasdaq-listed multinational company. By leveraging React.js for the front-end and Django for the back-end, the application provides a responsive and user-friendly interface, while ensuring scalability and security at the enterprise level. The solution integrates with SAP for enterprise resource planning (ERP) and uses PostgreSQL for robust and reliable data storage. The app also includes FTP capabilities for file transfer and integrates Axios to handle API requests seamlessly.",
+    "thumbnail": "https://i.postimg.cc/G9wfw4B1/globev-thumbnail.jpg",
     "repo": "",
     "repoLinkExpired": true,
     "liveLink": "",
@@ -82,35 +69,16 @@
       "Customer Management: Monitor and maintain customer profiles, sales history, and communication logs to enhance customer service and business relations.",
       "Data Security & User Authentication: Secure login and role-based access to ensure data integrity, with user authentication handled by Django’s built-in security features.",
       "Real-Time Updates: The application supports real-time updates for products and customer data, ensuring that business decisions are based on the most accurate and current information available.",
-      "Scalable Architecture: Built using a microservices architecture with Docker, the system ensures ease of deployment, scalability, and high availability, ideal for a multinational corporation like Ferroglobe."
+      "Scalable Architecture: Built using a microservices architecture with Docker, the system ensures ease of deployment, scalability, and high availability, ideal for a multinational corporation."
     ],
-    "businessImpact": "The Globe V application helps Ferroglobe manage its complex operations more efficiently, enabling cross-departmental collaboration, real-time data accessibility, and improved decision-making. By digitizing employee, product, and customer management, the company can optimize workflows, reduce administrative costs, and provide a better experience for both employees and customers.",
-    "additionalInfo": "Built using the latest industry-standard technologies, Globe V ensures the application can scale with Ferroglobe's growing operations, providing long-term value. The integration with SAP allows seamless business processes, enhancing the ERP system's efficiency by syncing crucial data in real-time. The application’s high-performance architecture supports Ferroglobe’s global presence, ensuring smooth operations across multiple regions.",
-    "companyName": "Ferroglobe",
+    "businessImpact": "This application helps to manage its complex operations more efficiently, enabling cross-departmental collaboration, real-time data accessibility, and improved decision-making. By digitizing employee, product, and customer management, the company can optimize workflows, reduce administrative costs, and provide a better experience for both employees and customers.",
+    "additionalInfo": "Built using the latest industry-standard technologies, it ensures the application can scale with companys growing operations, providing long-term value. The integration with SAP allows seamless business processes, enhancing the ERP system's efficiency by syncing crucial data in real-time. The application’s high-performance architecture supports comapnys global presence, ensuring smooth operations across multiple regions.",
+    "companyName": "-",
     "industry": "Specialty Metals",
     "location": "Global",
     "year": 2024,
     "images": [
-      "https://i.postimg.cc/zBjPz7qJ/globev1.webp",
-      "https://i.postimg.cc/rm8QP4x7/globev10.webp",
-      "https://i.postimg.cc/HxBBDLtn/globev11.webp",
-      "https://i.postimg.cc/FzzG9QPZ/globev12.webp",
-      "https://i.postimg.cc/C52756XV/globev13.webp",
-      "https://i.postimg.cc/tRv2BYTm/globev14.webp",
-      "https://i.postimg.cc/657zgt46/globev15.webp",
-      "https://i.postimg.cc/bNKLjW1x/globev16.webp",
-      "https://i.postimg.cc/7Z09P9Np/globev17.webp",
-      "https://i.postimg.cc/d0FBhCHD/globev18.webp",
-      "https://i.postimg.cc/HLttXLRz/globev19.webp",
-      "https://i.postimg.cc/HnvZ5LJR/globev2.webp",
-      "https://i.postimg.cc/fLTfKNhN/globev20.webp",
-      "https://i.postimg.cc/MZ9rg9s5/globev3.webp",
-      "https://i.postimg.cc/4yx2mc3p/globev4.webp",
-      "https://i.postimg.cc/3JWbh2VT/globev5.webp",
-      "https://i.postimg.cc/8P3Xzjgr/globev6.webp",
-      "https://i.postimg.cc/0ywWMP9X/globev7.webp",
-      "https://i.postimg.cc/KYh9twzG/globev8.webp",
-      "https://i.postimg.cc/5t5sggYw/globev9.webp"
+      
     ]
   },
   {
