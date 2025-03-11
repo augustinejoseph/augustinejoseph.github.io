@@ -281,23 +281,24 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
             </p>
           )}
         </div>
-        <Divider />{" "}
       </div>
 
       {/* Remaining Images */}
-      <h3 className="common-title">More Images:</h3>
       {remainingImages.length > 0 && (
-        <div className="mt-6 grid grid-cols-2 gap-6">
-          {remainingImages.map((image, index) => (
-            <div key={index} className="remaining-image-container">
-              <ProjectImage
-                src={image}
-                alt={`Remaining Feature Image ${index + 1}`}
-                className="common-image"
-              />
-            </div>
-          ))}
-        </div>
+        <>
+          <Divider /> <h3 className="common-title">More Images:</h3>
+          <div className="mt-6 grid grid-cols-2 gap-6">
+            {remainingImages.map((image, index) => (
+              <div key={index} className="remaining-image-container">
+                <ProjectImage
+                  src={image}
+                  alt={`Remaining Feature Image ${index + 1}`}
+                  className="common-image"
+                />
+              </div>
+            ))}
+          </div>
+        </>
       )}
     </section>
   );
@@ -332,7 +333,7 @@ export async function generateMetadata({
   return {
     title: project.title,
     description: project.description,
-    keywords: project.tags.join(", "),
+    keywords: project.metaKeywords.join(", "),
     openGraph: {
       title: project.title,
       description: project.description,
