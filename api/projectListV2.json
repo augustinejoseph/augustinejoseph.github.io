@@ -75,6 +75,63 @@
     "images": []
   },
   {
+    "title": "Fish Traceability System: Sea to Shelf Tracking",
+    "tags": [
+      "Python",
+      "Django",
+      "AWS",
+      "Amazon Web Services",
+      "SMTP",
+      "Docker",
+      "PostgreSQL",
+      "RestAPI"
+    ],
+    "metaKeywords": [
+      "Fish traceability",
+      "Good food",
+      "Legitfish",
+      "Seafood",
+      "Ruby on Rails",
+      "Supply chain management",
+      "Fisheries tracking",
+      "Sustainable fishing",
+      "Food safety",
+      "Blockchain for food traceability",
+      "Digital seafood tracking",
+      "Smart fisheries",
+      "Automated seafood traceability",
+      "Data-driven seafood supply",
+      "Django web application",
+      "Database optimization",
+      "API development",
+      "Inventory management",
+      "Fishing industry innovation",
+      "Sea-to-shelf monitoring",
+      "Logistics and supply chain",
+      "Food quality assurance"
+    ],
+    "description": "Migrated an existing Ruby on Rails application to Django, improving performance and scalability while ensuring seamless data traceability.",
+    "thumbnail": "https://i.postimg.cc/dVrC253v/saefotr-thumbnail.jpg",
+    "repo": "",
+    "repoLinkExpired": true,
+    "liveLink": "",
+    "liveLinkExpired": true,
+    "slug": "seafotr-fish-tracability",
+    "features": [
+      "Worked on migrating the existing application from Ruby on Rails to Django",
+      "Conducted comprehensive data analysis and designed an optimized database schema to support traceability requirements",
+      "Added email functionality to send notifications."
+    ],
+    "businessImpact": "Enhanced seafood traceability, reducing supply chain inefficiencies and ensuring compliance with industry regulations.",
+    "additionalInfo": "Implemented secure authentication and authorization mechanisms to protect data integrity.",
+    "companyName": "",
+    "industry": "Fisheries",
+    "location": "Global",
+    "year": 2025,
+    "isPortraitImages": false,
+    "images": []
+  },
+  {
     "title": "End-to-End Solution for Silicon Manufacturing Company",
     "tags": [
       "Python",
@@ -203,7 +260,7 @@
       "online article platform",
       "freelance writers platform",
       "web platform for article sharing"
-    ],    
+    ],
     "isPortraitImages": false,
     "description": "Data Lens is an article publishing website where users can publish articles on any topic, and anybody can read them for free. Inspired by Medium.com, it offers a platform for content creators to share their insights and monetize their free time. Technologies like microservices, React, Django, NodeJS, Docker, and AWS were used to build this scalable and efficient platform.",
     "thumbnail": "https://i.postimg.cc/4xKs3cCV/datalens.png",
@@ -282,7 +339,7 @@
       "TMDB movie search",
       "movie and TV show information",
       "React Axios movie app"
-    ],    
+    ],
     "description": "Movie Finder is a website that uses the TMDB API to fetch movie data and display it using React.js.",
     "thumbnail": "https://i.postimg.cc/NF7Jykqj/moviefinder.webp",
     "repo": "https://github.com/augustinejoseph/movie-finder-react",
@@ -352,7 +409,7 @@
       "footwear shopping online",
       "customer return and refund system",
       "online shoe store"
-    ],    
+    ],
     "description": "Happy Feets is an e-commerce website selling footwear, featuring product views, payment integration, returns, and more.",
     "thumbnail": "https://i.postimg.cc/4nRdhKnN/happyfeetz.png",
     "repo": "https://github.com/augustinejoseph/e-commerce-website",
