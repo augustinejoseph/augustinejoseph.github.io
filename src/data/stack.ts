@@ -30,9 +30,14 @@ import {
   TailWindIcon,
   GitHubActionsIcon,
   GitHubPagesIcon,
+  AIIcon,
 } from "@/components/icons";
 
 export const STACKS = [
+  {
+    label: "AI",
+    icon: AIIcon,
+  },
   {
     label: "Python",
     icon: PythonIcon,
@@ -54,6 +59,10 @@ export const STACKS = [
     icon: AWSIcon,
   },
   {
+    label: "Docker",
+    icon: DockerIcon,
+  },
+  {
     label: "Git",
     icon: GitIcon,
   },
@@ -66,11 +75,15 @@ export const STACKS = [
     icon: GraphQLIcon,
   },
   {
-    label: "Linux",
-    icon: LinuxIcon,
+    label: "GitHub Actions",
+    icon: GitHubActionsIcon,
   },
   {
-    label: "PostgreSQL",
+    label: "React Native",
+    icon: ReactNativeIcon,
+  },
+  {
+    label: "Postgre SQL",
     icon: PostgreSQLIcon,
   },
   {
@@ -88,10 +101,6 @@ export const STACKS = [
   {
     label: "Nginx",
     icon: NginxIcon,
-  },
-  {
-    label: "Docker",
-    icon: DockerIcon,
   },
   {
     label: "GitHub",
@@ -118,12 +127,12 @@ export const STACKS = [
     icon: TypeScriptIcon,
   },
   {
-    label: "React Native",
-    icon: ReactNativeIcon,
-  },
-  {
     label: "Redux-Saga",
     icon: ReduxSagaIcon,
+  },
+  {
+    label: "Linux",
+    icon: LinuxIcon,
   },
   {
     label: "Vue.js",
@@ -149,10 +158,7 @@ export const STACKS = [
     label: "Tailwind CSS",
     icon: TailWindIcon,
   },
-  {
-    label: "GitHub Actions",
-    icon: GitHubActionsIcon,
-  },
+
   {
     label: "GitHub Pages",
     icon: GitHubPagesIcon,

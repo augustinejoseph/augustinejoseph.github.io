@@ -1,4 +1,5 @@
-# augustinejoseph.github.io
+# Augustine Joseph
+[augustinejoseph.github.io](augustinejoseph.github.io)
 
 This is my portfolio website build using:
 

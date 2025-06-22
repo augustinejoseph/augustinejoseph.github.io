@@ -39,25 +39,19 @@ export default async function Home() {
         className="mb-5 cursor-pointer rounded-full"
         unoptimized
       />
-      <h1 className="text-2xl font-bold">Augustine Joseph</h1>
+      <h1 className="text-2xl font-bold">Augustine Joseph - AI Powered App Developer</h1>
 
       <div className="text-gray-700 dark:text-gray-300">
         <p className="mt-4">
-          I’m a fullstack software engineer specializing in building scalable
-          web applications having rich user interface.
+          I’m a Full-Stack Software Engineer and AI Developer specializing in
+          building scalable web applications with rich, responsive user
+          interfaces.
         </p>
         <p className="mb-4 mt-4">
-          Over the years, I&apos;ve worked on multiple projects to build
-          end-to-end products in manufacturing, dashcams, and banking.
-          {/* Currently, I&apos;m building iGaming solutions at &nbsp; */}
-          {/* <a
-              href="https://mindworks.xyz/"
-              target="_blank"
-              className="border-b inline-block"
-            >
-              mindworks.xyz
-            </a>
-            . */}
+          Over the years, I’ve developed end-to-end solutions across various
+          industries including manufacturing, dashcams, and banking, with a
+          growing focus on integrating artificial intelligence into modern web
+          and mobile applications.
         </p>
 
         <p className="mb-4">
@@ -189,7 +183,6 @@ export default async function Home() {
     </section>
   );
 }
-
 
 export async function generateMetadata({
   params,

@@ -32,8 +32,8 @@ export async function fetchProjects() {
 
 export async function fetchExperienceList() {
   const res = await fetch(LINKS.EXPERIENCE);
-  const experienceList = await res.json();
-  // const experienceList = experienceListV2;
+  // const experienceList = await res.json();
+  const experienceList = experienceListV2;
   return experienceList;
 }
 
