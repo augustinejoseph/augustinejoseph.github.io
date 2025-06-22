@@ -2,15 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://augustinejoseph.github.io/</loc>
-<lastmod>2025-03-12</lastmod>
+<lastmod>2025-06-22</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/blog</loc>
-<lastmod>2025-03-12</lastmod>
+<lastmod>2025-06-22</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects</loc>
-<lastmod>2025-03-12</lastmod>
+<lastmod>2025-06-22</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.medium.com/host-your-own-git-server-at-home-using-gitea-and-docker-on-ubuntu-31af8de3cb30?source=rss-a466d6a4ac30------2</loc>
+<lastmod>2025-06-22 04:26:29</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.medium.com/boosting-django-performance-with-redis-caching-a-comprehensive-guide-72bd42a21fe8?source=rss-a466d6a4ac30------2</loc>
@@ -49,31 +53,31 @@
 <lastmod>2024-06-17 03:41:27</lastmod>
 </url>
 <url>
-<loc>https://augustinejoseph.medium.com/binary-search-in-c-3562807d5fe6?source=rss-a466d6a4ac30------2</loc>
-<lastmod>2024-06-16 12:41:53</lastmod>
+<loc>https://augustinejoseph.github.io/projects/tracktune_music_artist_app</loc>
+<lastmod>2025-06-22</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/inaxes_mobile_app</loc>
-<lastmod>2025-03-12</lastmod>
+<lastmod>2025-06-22</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/seafotr-fish-tracability</loc>
-<lastmod>2025-03-12</lastmod>
+<lastmod>2025-06-22</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/globev</loc>
-<lastmod>2025-03-12</lastmod>
+<lastmod>2025-06-22</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/data_lens</loc>
-<lastmod>2025-03-12</lastmod>
+<lastmod>2025-06-22</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/movie_finder</loc>
-<lastmod>2025-03-12</lastmod>
+<lastmod>2025-06-22</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/happy_feets</loc>
-<lastmod>2025-03-12</lastmod>
+<lastmod>2025-06-22</lastmod>
 </url>
 </urlset>
