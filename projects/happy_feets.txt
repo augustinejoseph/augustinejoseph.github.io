@@ -1,6 +1,6 @@
 1:HL["/_next/static/media/7cba1811e3c25a15-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 2:HL["/_next/static/css/8511abd7febf13b2.css","style",{"crossOrigin":""}]
-0:["UfZumLRwOCJE8oiRv9pRx",[[["",{"children":["projects",{"children":[["slug","happy_feets","d"],{"children":["__PAGE__?{\"slug\":\"happy_feets\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/8511abd7febf13b2.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
+0:["7hQpLYa1znuPc2nXdCcR0",[[["",{"children":["projects",{"children":[["slug","happy_feets","d"],{"children":["__PAGE__?{\"slug\":\"happy_feets\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/8511abd7febf13b2.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
 5:I[688,["326","static/chunks/326-cf1dfac4ceb1c9a5.js","929","static/chunks/929-f3c4c80d5d753540.js","185","static/chunks/app/layout-f08e1bf481f03628.js"],"ThemeProvider"]
 6:I[6516,["326","static/chunks/326-cf1dfac4ceb1c9a5.js","929","static/chunks/929-f3c4c80d5d753540.js","185","static/chunks/app/layout-f08e1bf481f03628.js"],"Header"]
 7:I[6954,[],""]
