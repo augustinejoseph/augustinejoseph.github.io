@@ -39,19 +39,17 @@ export default async function Home() {
         className="mb-5 cursor-pointer rounded-full"
         unoptimized
       />
-      <h1 className="text-2xl font-bold">Augustine Joseph - AI Powered App Developer</h1>
+      <h1 className="text-2xl font-bold">Augustine Joseph - Build Intelligent, Scalable apps that blend clean code, smart AI, and seamless user experiences.</h1>
 
       <div className="text-gray-700 dark:text-gray-300">
         <p className="mt-4">
-          I’m a Full-Stack Software Engineer and AI Developer specializing in
-          building scalable web applications with rich, responsive user
-          interfaces.
+          I’m a Full-Stack Software Engineer and AI Developer passionate about turning complex ideas into impactful digital products. My journey began with Python and Django, and over time I’ve expanded into React, React Native, Node.js, and cloud platforms like AWS and GCP.
         </p>
         <p className="mb-4 mt-4">
-          Over the years, I’ve developed end-to-end solutions across various
-          industries including manufacturing, dashcams, and banking, with a
-          growing focus on integrating artificial intelligence into modern web
-          and mobile applications.
+          I’ve built end-to-end solutions across diverse industries—from enterprise platforms for global manufacturing to mobile apps for IoT devices like dashcams. Lately, I’ve been exploring how AI can transform modern applications, integrating intelligent features into web and mobile products that improve usability and scalability.
+        </p>
+        <p className="mt-4">
+        What sets me apart is my ability to work across the stack—designing intuitive front-end experiences, engineering robust back-end systems, and deploying secure, cloud-based solutions—while always keeping the end user in mind.
         </p>
 
         <p className="mb-4">
