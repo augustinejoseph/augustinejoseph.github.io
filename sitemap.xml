@@ -2,15 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://augustinejoseph.github.io/</loc>
-<lastmod>2025-08-16</lastmod>
+<lastmod>2025-10-27</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/blog</loc>
-<lastmod>2025-08-16</lastmod>
+<lastmod>2025-10-27</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects</loc>
-<lastmod>2025-08-16</lastmod>
+<lastmod>2025-10-27</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.medium.com/when-dynamic-imports-go-wrong-best-practices-for-recovery-a6990acead99?source=rss-a466d6a4ac30------2</loc>
+<lastmod>2025-10-07 18:29:45</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.medium.com/threading-and-multiprocessing-in-python-67eb0c749f7a?source=rss-a466d6a4ac30------2</loc>
@@ -49,35 +53,31 @@
 <lastmod>2024-06-19 04:09:49</lastmod>
 </url>
 <url>
-<loc>https://augustinejoseph.medium.com/beyond-plates-unveiling-the-power-of-stacks-in-programming-using-c-33a44c02fe6b?source=rss-a466d6a4ac30------2</loc>
-<lastmod>2024-06-17 04:11:11</lastmod>
-</url>
-<url>
 <loc>https://augustinejoseph.github.io/projects/tracktune_music_artist_app</loc>
-<lastmod>2025-08-16</lastmod>
+<lastmod>2025-10-27</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/inaxes_mobile_app</loc>
-<lastmod>2025-08-16</lastmod>
+<lastmod>2025-10-27</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/seafotr-fish-tracability</loc>
-<lastmod>2025-08-16</lastmod>
+<lastmod>2025-10-27</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/globev</loc>
-<lastmod>2025-08-16</lastmod>
+<lastmod>2025-10-27</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/data_lens</loc>
-<lastmod>2025-08-16</lastmod>
+<lastmod>2025-10-27</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/movie_finder</loc>
-<lastmod>2025-08-16</lastmod>
+<lastmod>2025-10-27</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/happy_feets</loc>
-<lastmod>2025-08-16</lastmod>
+<lastmod>2025-10-27</lastmod>
 </url>
 </urlset>
