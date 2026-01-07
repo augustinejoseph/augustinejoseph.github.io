@@ -1,5 +1,32 @@
 [
   {
+    "title": "GERRESPONSE - AI Autonomous Lifecycle Marketing",
+    "tags": ["ChatGPT", "AI", "FastAPI", "MongoDB", "AWS", "Agentic AI"],
+    "metaKeywords": ["Chagpt Integration"],
+    "description": "Contributed to the development of core features and contributed across the full product lifecycle of GetReplies.ai, an AI-powered autonomous marketing platform that enables B2B teams to automate multi-channel outreach (email, LinkedIn, calling) with hyper-personalized campaigns and deliverability optimization.",
+    "thumbnail": "https://i.postimg.cc/rsvq0tmJ/getreplies-thumbnail-image.png",
+    "repo": "",
+    "repoLinkExpired": true,
+    "liveLink": "",
+    "liveLinkExpired": true,
+    "slug": "getresponse_agentic_app",
+    "features": [
+      "Can create campaigns by chatting with agents",
+      "Automate the delivery of messages and mails for the selected list of contacts.",
+      "Sync and use the existing connections and contacts from platforms like HubSpot.",
+      "Personalize the message based on the reciepients data.",
+      "Track insights and performance metrics at campaign and activity level.",
+      "Ability to pause, restart, duplicate campaigns."
+    ],
+    "businessImpact": "",
+    "companyName": "",
+    "industry": "Sales and Campaigns",
+    "location": "Banglore, India",
+    "year": 2025,
+    "isPortraitImages": false,
+    "images": []
+  },
+  {
     "title": "Progress Tracker for Music Artists -  Workflow & Release Tracker",
     "tags": [
       "ChatGPT",
