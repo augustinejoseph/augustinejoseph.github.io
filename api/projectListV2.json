@@ -1,22 +1,45 @@
 [
   {
-    "title": "GERRESPONSE - AI Autonomous Lifecycle Marketing",
-    "tags": ["ChatGPT", "AI", "FastAPI", "MongoDB", "AWS", "Agentic AI"],
-    "metaKeywords": ["Chagpt Integration"],
-    "description": "Contributed to the development of core features and contributed across the full product lifecycle of GetReplies.ai, an AI-powered autonomous marketing platform that enables B2B teams to automate multi-channel outreach (email, LinkedIn, calling) with hyper-personalized campaigns and deliverability optimization.",
-    "thumbnail": "https://i.postimg.cc/rsvq0tmJ/getreplies-thumbnail-image.png",
+    "title": "GetReplies.ai - AI Autonomous Lifecycle Marketing",
+    "tags": [
+      "FastAPI",
+      "MongoDB",
+      "AWS",
+      "Agentic AI",
+      "AI Personalization",
+      "Multi-channel Automation",
+      "CRM Integration",
+      "Campaign Orchestration",
+      "Analytics"
+    ],
+    "metaKeywords": [
+      "AI lifecycle marketing",
+      "autonomous outreach automation",
+      "B2B multi-channel outreach",
+      "AI personalized campaigns",
+      "agentic AI marketing platform",
+      "email LinkedIn calling automation",
+      "deliverability optimization",
+      "unified inbox reply handling",
+      "CRM integration",
+      "campaign orchestration"
+    ],
+    "description": "Contributed to the development of core features and across the full product lifecycle of GetReplies.ai, an AI-powered autonomous marketing platform that enables B2B teams to automate multi-channel outreach (email, LinkedIn, calling) with hyper-personalized campaigns and deliverability optimization.",
+    "thumbnail": "/_static/projects/getresponse_agentic_app/getreplies-thumbnail-image.png",
     "repo": "",
     "repoLinkExpired": true,
-    "liveLink": "",
-    "liveLinkExpired": true,
+    "liveLink": "https://getreplies.ai/",
+    "liveLinkExpired": false,
     "slug": "getresponse_agentic_app",
     "features": [
-      "Can create campaigns by chatting with agents",
-      "Automate the delivery of messages and mails for the selected list of contacts.",
-      "Sync and use the existing connections and contacts from platforms like HubSpot.",
-      "Personalize the message based on the reciepients data.",
+      "Built frontend and backend components supporting AI-driven personalized content, unified inbox reply handling, and dashboards.",
+      "Collaborated with cross-functional teams to design and ship new agents and features.",
+      "Create campaigns by chatting with agents across email, LinkedIn, and calling channels.",
+      "Automate the delivery of messages and mails for a selected list of contacts.",
+      "Sync and use existing connections and contacts from CRM platforms like HubSpot.",
+      "Personalize messages based on recipient data with deliverability optimization.",
       "Track insights and performance metrics at campaign and activity level.",
-      "Ability to pause, restart, duplicate campaigns."
+      "Ability to pause, restart, and duplicate campaigns."
     ],
     "businessImpact": "",
     "companyName": "",
@@ -24,6 +47,59 @@
     "location": "Banglore, India",
     "year": 2025,
     "isPortraitImages": false,
+    "images": []
+  },
+  {
+    "title": "Tahatok – PWA Reading App for Children's Stories",
+    "tags": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "AWS",
+      "S3",
+      "IAM",
+      "Cloudflare",
+      "ECS",
+      "PWA"
+    ],
+    "metaKeywords": [
+      "PWA reading app",
+      "children's stories app",
+      "kids reading platform",
+      "progressive web app stories",
+      "Django reading app",
+      "PostgreSQL stories database",
+      "AWS S3 media storage",
+      "AWS IAM roles",
+      "Cloudflare CDN",
+      "AWS ECS deployment",
+      "offline reading app",
+      "stories for children",
+      "kids ebook platform",
+      "installable web app"
+    ],
+    "isPortraitImages": false,
+    "description": "Tahatok is a Progressive Web App (PWA) for reading stories, designed for children. It delivers an installable, app-like reading experience in the browser, with story content and media served reliably at scale. Built with Django and PostgreSQL on the backend, media stored in AWS S3 with IAM-based access control, and deployed on AWS ECS behind Cloudflare for fast, secure global delivery.",
+    "thumbnail": "",
+    "repo": "",
+    "repoLinkExpired": true,
+    "liveLink": "https://tahatok.com",
+    "liveLinkExpired": false,
+    "slug": "tahatok_reading_app",
+    "features": [
+      "Progressive Web App (PWA) offering an installable, app-like reading experience.",
+      "Curated library of stories crafted for children.",
+      "Django and PostgreSQL backend for content and user management.",
+      "Story media and assets stored in AWS S3 with IAM roles for secure, scoped access.",
+      "Deployed on AWS ECS for scalable, containerized hosting.",
+      "Cloudflare for CDN delivery, caching, and security."
+    ],
+    "businessImpact": "Tahatok makes children's stories accessible anywhere through an installable PWA, removing app-store friction while delivering a fast, reliable reading experience. The AWS and Cloudflare infrastructure ensures content is served securely and at scale to a growing audience of young readers.",
+    "additionalInfo": "The platform uses AWS S3 with IAM roles for secure media storage and access control, runs as containers on AWS ECS for scalability, and sits behind Cloudflare for caching and protection. The PWA architecture enables offline-friendly, installable access across devices.",
+    "companyName": "",
+    "industry": "Education / Kids",
+    "location": "Remote",
+    "year": 2025,
     "images": []
   },
   {
@@ -81,7 +157,7 @@
       "track performance analytics"
     ],
     "description": "TrackTune is a mobile application built with React Native that empowers music artists to plan, track, and manage their creative journey—from the first spark of a song idea to the final release on platforms like Spotify and YouTube. The app allows artists to capture ideas, upload lyrics, audio, and related media, generate content using AI, and provides a dynamic timeline to ensure every milestone is met before release deadlines.",
-    "thumbnail": "https://i.postimg.cc/rsrtpgtD/ainsemble-cover.png",
+    "thumbnail": "/_static/projects/tracktune_music_artist_app/ainsemble-cover.png",
     "repo": "",
     "repoLinkExpired": true,
     "liveLink": "",
@@ -155,7 +231,7 @@
       "dashcam management app"
     ],
     "description": "The dashcam Mobile App allows users to configure settings, view recorded footage, and manage device settings for various dashcam models equipped with different chipsets.",
-    "thumbnail": "https://i.postimg.cc/tgS4zjfj/inaxes-thumbnail.jpg",
+    "thumbnail": "/_static/projects/inaxes_mobile_app/inaxes-thumbnail.jpg",
     "repo": "",
     "repoLinkExpired": true,
     "liveLink": "https://apps.apple.com/az/app/inaxes/id6475817104",
@@ -219,7 +295,7 @@
       "Food quality assurance"
     ],
     "description": "Migrated an existing Ruby on Rails application to Django, improving performance and scalability while ensuring seamless data traceability.",
-    "thumbnail": "https://i.postimg.cc/dVrC253v/saefotr-thumbnail.jpg",
+    "thumbnail": "/_static/projects/seafotr-fish-tracability/saefotr-thumbnail.jpg",
     "repo": "",
     "repoLinkExpired": true,
     "liveLink": "",
@@ -290,7 +366,7 @@
     ],
     "isPortraitImages": false,
     "description": "A web application developed to streamline and manage key business operations for Ferroglobe, a global leader in the production of specialty metals. This platform facilitates efficient management of employees, products, and customer relations for a Nasdaq-listed multinational company. By leveraging React.js for the front-end and Django for the back-end, the application provides a responsive and user-friendly interface, while ensuring scalability and security at the enterprise level. The solution integrates with SAP for enterprise resource planning (ERP) and uses PostgreSQL for robust and reliable data storage. The app also includes FTP capabilities for file transfer and integrates Axios to handle API requests seamlessly.",
-    "thumbnail": "https://i.postimg.cc/G9wfw4B1/globev-thumbnail.jpg",
+    "thumbnail": "/_static/projects/globev/globev-thumbnail.jpg",
     "repo": "",
     "repoLinkExpired": true,
     "liveLink": "",
@@ -371,7 +447,7 @@
     ],
     "isPortraitImages": false,
     "description": "Data Lens is an article publishing website where users can publish articles on any topic, and anybody can read them for free. Inspired by Medium.com, it offers a platform for content creators to share their insights and monetize their free time. Technologies like microservices, React, Django, NodeJS, Docker, and AWS were used to build this scalable and efficient platform.",
-    "thumbnail": "https://i.postimg.cc/4xKs3cCV/datalens.png",
+    "thumbnail": "/_static/projects/data_lens/datalens.png",
     "repo": "https://github.com/augustinejoseph/datalens-article-publising-website",
     "repoLinkExpired": false,
     "liveLink": "http://datalens.live",
@@ -394,31 +470,36 @@
     "location": "Remote",
     "year": 2023,
     "images": [
-      "https://i.postimg.cc/v8zQ2MLg/datalens1.png",
-      "https://i.postimg.cc/zX2q5jQq/datalens2.png",
-      "https://i.postimg.cc/ryhBtpNJ/datalens9.png",
-      "https://i.postimg.cc/Dy9Yq4Jq/datalens16.png",
-      "https://i.postimg.cc/fWgPRrMq/datalens17.png",
-      "https://i.postimg.cc/bw1VLYk4/datalens18.png",
-      "https://i.postimg.cc/Z5yzmh3L/datalens4.png",
-      "https://i.postimg.cc/NFLPx1kx/datalens14.png",
-      "https://i.postimg.cc/qv90670Y/datalens3.png",
-      "https://i.postimg.cc/vTj22cPw/datalens15.png",
-      "https://i.postimg.cc/k5dzdR7n/datalens10.png",
-      "https://i.postimg.cc/jjQ9qqjy/datalens11.png",
-      "https://i.postimg.cc/76KW7B06/datalens12.png",
-      "https://i.postimg.cc/k4JH2rVz/datalens13.png",
-      "https://i.postimg.cc/6Q0jJHH0/datalens19.png",
-      "https://i.postimg.cc/VN1GhyFv/datalens20.png",
-      "https://i.postimg.cc/SRTbSSDg/datalens5.png",
-      "https://i.postimg.cc/YqZTbyVL/datalens6.png",
-      "https://i.postimg.cc/xTcWGSsS/datalens7.png",
-      "https://i.postimg.cc/DwGHDPkj/datalens8.png"
+      "/_static/projects/data_lens/datalens1.png",
+      "/_static/projects/data_lens/datalens2.png",
+      "/_static/projects/data_lens/datalens9.png",
+      "/_static/projects/data_lens/datalens16.png",
+      "/_static/projects/data_lens/datalens17.png",
+      "/_static/projects/data_lens/datalens18.png",
+      "/_static/projects/data_lens/datalens4.png",
+      "/_static/projects/data_lens/datalens14.png",
+      "/_static/projects/data_lens/datalens3.png",
+      "/_static/projects/data_lens/datalens15.png",
+      "/_static/projects/data_lens/datalens10.png",
+      "/_static/projects/data_lens/datalens11.png",
+      "/_static/projects/data_lens/datalens12.png",
+      "/_static/projects/data_lens/datalens13.png",
+      "/_static/projects/data_lens/datalens19.png",
+      "/_static/projects/data_lens/datalens20.png",
+      "/_static/projects/data_lens/datalens5.png",
+      "/_static/projects/data_lens/datalens6.png",
+      "/_static/projects/data_lens/datalens7.png",
+      "/_static/projects/data_lens/datalens8.png"
     ]
   },
   {
     "title": "Movie Finder – Find Movies and TV Show Details",
-    "tags": ["React", "Create React App", "Axios", "TMDB"],
+    "tags": [
+      "React",
+      "Create React App",
+      "Axios",
+      "TMDB"
+    ],
     "metaKeywords": [
       "movie finder website",
       "TMDB movie data",
@@ -449,7 +530,7 @@
       "React Axios movie app"
     ],
     "description": "Movie Finder is a website that uses the TMDB API to fetch movie data and display it using React.js.",
-    "thumbnail": "https://i.postimg.cc/NF7Jykqj/moviefinder.webp",
+    "thumbnail": "/_static/projects/movie_finder/moviefinder.webp",
     "repo": "https://github.com/augustinejoseph/movie-finder-react",
     "repoLinkExpired": false,
     "liveLink": "example.com",
@@ -467,9 +548,9 @@
     "location": "Remote",
     "year": 2023,
     "images": [
-      "https://i.postimg.cc/d0b44xJ0/movie-finder1.webp",
-      "https://i.postimg.cc/wTg4CZLy/movie-finder2.webp",
-      "https://i.postimg.cc/nc2Sp2Gd/movie-finder3.webp"
+      "/_static/projects/movie_finder/movie-finder1.webp",
+      "/_static/projects/movie_finder/movie-finder2.webp",
+      "/_static/projects/movie_finder/movie-finder3.webp"
     ]
   },
   {
@@ -519,7 +600,7 @@
       "online shoe store"
     ],
     "description": "Happy Feets is an e-commerce website selling footwear, featuring product views, payment integration, returns, and more.",
-    "thumbnail": "https://i.postimg.cc/4nRdhKnN/happyfeetz.png",
+    "thumbnail": "/_static/projects/happy_feets/happyfeetz.png",
     "repo": "https://github.com/augustinejoseph/e-commerce-website",
     "repoLinkExpired": false,
     "liveLink": "http://happyfeetz.in",
@@ -541,21 +622,19 @@
     "location": "Remote",
     "year": 2023,
     "images": [
-      "https://i.postimg.cc/VLv47d7H/happy-feets1.png",
-      "https://i.postimg.cc/kgtsmLPQ/happy-feets2.png",
-      "https://i.postimg.cc/4nRdhKnN/happyfeetz.png",
-
-      "https://i.postimg.cc/sDrCMLkh/happy-feets7.png",
-      "https://i.postimg.cc/pXJbzZv1/happy-feets8.png",
-      "https://i.postimg.cc/fRW4K9TW/happy-feets9.png",
-      "https://i.postimg.cc/0yVTHybY/happy-feets10.png",
-
-      "https://i.postimg.cc/4dnmCkrZ/happy-feets11.png",
-      "https://i.postimg.cc/63STtbXZ/happy-feets12.png",
-      "https://i.postimg.cc/9FkbsCKX/happy-feets3.png",
-      "https://i.postimg.cc/R05RVGvj/happy-feets4.png",
-      "https://i.postimg.cc/4xzcwGTS/happy-feets5.png",
-      "https://i.postimg.cc/WprPbVHV/happy-feets6.png"
+      "/_static/projects/happy_feets/happy-feets1.png",
+      "/_static/projects/happy_feets/happy-feets2.png",
+      "/_static/projects/happy_feets/happyfeetz.png",
+      "/_static/projects/happy_feets/happy-feets7.png",
+      "/_static/projects/happy_feets/happy-feets8.png",
+      "/_static/projects/happy_feets/happy-feets9.png",
+      "/_static/projects/happy_feets/happy-feets10.png",
+      "/_static/projects/happy_feets/happy-feets11.png",
+      "/_static/projects/happy_feets/happy-feets12.png",
+      "/_static/projects/happy_feets/happy-feets3.png",
+      "/_static/projects/happy_feets/happy-feets4.png",
+      "/_static/projects/happy_feets/happy-feets5.png",
+      "/_static/projects/happy_feets/happy-feets6.png"
     ]
   }
 ]

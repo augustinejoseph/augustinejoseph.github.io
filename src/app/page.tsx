@@ -32,7 +32,7 @@ export default async function Home() {
   return (
     <section>
       <Image
-        src={"https://i.postimg.cc/g2f4g6kH/me.jpg"}
+        src={"/_static/me.jpg"}
         width={100}
         height={100}
         alt="avatar"

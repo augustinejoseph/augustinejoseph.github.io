@@ -1,6 +1,7 @@
 export interface Project { 
     title:            string;
     tags:             string[];
+    metaKeywords?:    string[];
     description:      string;
     thumbnail:        string;
     repo:             string;
@@ -10,7 +11,7 @@ export interface Project {
     slug:             string;
     features:         string[];
     businessImpact:   string;
-    additionalInfo:   string;
+    additionalInfo?:  string;
     companyName?:      string;
     industry:         string;
     location:         string;

@@ -2,15 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://augustinejoseph.github.io/</loc>
-<lastmod>2025-01-25</lastmod>
+<lastmod>2026-06-20</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/blog</loc>
-<lastmod>2025-01-25</lastmod>
+<lastmod>2026-06-20</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects</loc>
-<lastmod>2025-01-25</lastmod>
+<lastmod>2026-06-20</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.medium.com/fastapi-vs-django-vs-django-ninja-vs-fastify-vs-express-a-real-world-performance-benchmark-on-0b0fd1db9eb0?source=rss-a466d6a4ac30------2</loc>
+<lastmod>2026-01-07 04:53:01</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.medium.com/when-dynamic-imports-go-wrong-best-practices-for-recovery-a6990acead99?source=rss-a466d6a4ac30------2</loc>
+<lastmod>2025-10-07 18:29:45</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.medium.com/threading-and-multiprocessing-in-python-67eb0c749f7a?source=rss-a466d6a4ac30------2</loc>
+<lastmod>2025-08-16 17:57:07</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.medium.com/host-your-own-git-server-at-home-using-gitea-and-docker-on-ubuntu-31af8de3cb30?source=rss-a466d6a4ac30------2</loc>
+<lastmod>2025-06-22 04:26:29</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.medium.com/boosting-django-performance-with-redis-caching-a-comprehensive-guide-72bd42a21fe8?source=rss-a466d6a4ac30------2</loc>
+<lastmod>2025-03-01 07:50:57</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.medium.com/how-to-setup-google-search-console-for-a-website-complete-guide-b2dc4e50aa7c?source=rss-a466d6a4ac30------2</loc>
+<lastmod>2025-01-25 06:16:23</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.medium.com/nextjs-seo-optimization-f4714b267766?source=rss-a466d6a4ac30------2</loc>
@@ -29,47 +53,39 @@
 <lastmod>2024-06-19 09:41:58</lastmod>
 </url>
 <url>
-<loc>https://augustinejoseph.medium.com/hashing-algorithms-and-collision-management-ff1d242b050b?source=rss-a466d6a4ac30------2</loc>
-<lastmod>2024-06-19 04:09:49</lastmod>
+<loc>https://augustinejoseph.github.io/projects/getresponse_agentic_app</loc>
+<lastmod>2026-06-20</lastmod>
 </url>
 <url>
-<loc>https://augustinejoseph.medium.com/beyond-plates-unveiling-the-power-of-stacks-in-programming-using-c-33a44c02fe6b?source=rss-a466d6a4ac30------2</loc>
-<lastmod>2024-06-17 04:11:11</lastmod>
+<loc>https://augustinejoseph.github.io/projects/tahatok_reading_app</loc>
+<lastmod>2026-06-20</lastmod>
 </url>
 <url>
-<loc>https://augustinejoseph.medium.com/postfix-notation-reverse-polish-notation-or-rpn-aa64edce1c51?source=rss-a466d6a4ac30------2</loc>
-<lastmod>2024-06-17 03:41:27</lastmod>
-</url>
-<url>
-<loc>https://augustinejoseph.medium.com/binary-search-in-c-3562807d5fe6?source=rss-a466d6a4ac30------2</loc>
-<lastmod>2024-06-16 12:41:53</lastmod>
-</url>
-<url>
-<loc>https://augustinejoseph.medium.com/storage-classes-in-c-873698bec728?source=rss-a466d6a4ac30------2</loc>
-<lastmod>2024-06-10 06:40:33</lastmod>
-</url>
-<url>
-<loc>https://augustinejoseph.medium.com/everything-about-array-8c9718a6c20f?source=rss-a466d6a4ac30------2</loc>
-<lastmod>2024-05-26 06:24:52</lastmod>
+<loc>https://augustinejoseph.github.io/projects/tracktune_music_artist_app</loc>
+<lastmod>2026-06-20</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/inaxes_mobile_app</loc>
-<lastmod>2025-01-25</lastmod>
+<lastmod>2026-06-20</lastmod>
+</url>
+<url>
+<loc>https://augustinejoseph.github.io/projects/seafotr-fish-tracability</loc>
+<lastmod>2026-06-20</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/globev</loc>
-<lastmod>2025-01-25</lastmod>
+<lastmod>2026-06-20</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/data_lens</loc>
-<lastmod>2025-01-25</lastmod>
+<lastmod>2026-06-20</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/movie_finder</loc>
-<lastmod>2025-01-25</lastmod>
+<lastmod>2026-06-20</lastmod>
 </url>
 <url>
 <loc>https://augustinejoseph.github.io/projects/happy_feets</loc>
-<lastmod>2025-01-25</lastmod>
+<lastmod>2026-06-20</lastmod>
 </url>
 </urlset>
