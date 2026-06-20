@@ -1,6 +1,11 @@
 [
   {
     "title": "GetReplies.ai - AI Autonomous Lifecycle Marketing",
+    "slug": "getresponse_agentic_app",
+    "year": 2025,
+    "industry": "Sales and Campaigns",
+    "location": "Bangalore, India",
+    "companyName": "",
     "tags": [
       "FastAPI",
       "MongoDB",
@@ -25,12 +30,6 @@
       "campaign orchestration"
     ],
     "description": "Contributed to the development of core features and across the full product lifecycle of GetReplies.ai, an AI-powered autonomous marketing platform that enables B2B teams to automate multi-channel outreach (email, LinkedIn, calling) with hyper-personalized campaigns and deliverability optimization.",
-    "thumbnail": "/_static/projects/getresponse_agentic_app/getreplies-thumbnail-image.png",
-    "repo": "",
-    "repoLinkExpired": true,
-    "liveLink": "https://getreplies.ai/",
-    "liveLinkExpired": false,
-    "slug": "getresponse_agentic_app",
     "features": [
       "Built frontend and backend components supporting AI-driven personalized content, unified inbox reply handling, and dashboards.",
       "Collaborated with cross-functional teams to design and ship new agents and features.",
@@ -42,15 +41,21 @@
       "Ability to pause, restart, and duplicate campaigns."
     ],
     "businessImpact": "",
-    "companyName": "",
-    "industry": "Sales and Campaigns",
-    "location": "Bangalore, India",
-    "year": 2025,
+    "thumbnail": "/_static/projects/getresponse_agentic_app/getreplies-thumbnail-image.png",
+    "images": [],
     "isPortraitImages": false,
-    "images": []
+    "repo": "",
+    "repoLinkExpired": true,
+    "liveLink": "https://getreplies.ai/",
+    "liveLinkExpired": false
   },
   {
     "title": "Tahatok – PWA Reading App for Children's Stories",
+    "slug": "tahatok_reading_app",
+    "year": 2025,
+    "industry": "Education / Kids",
+    "location": "Remote",
+    "companyName": "",
     "tags": [
       "Python",
       "Django",
@@ -78,14 +83,7 @@
       "kids ebook platform",
       "installable web app"
     ],
-    "isPortraitImages": false,
     "description": "Tahatok is a Progressive Web App (PWA) for reading stories, designed for children. It delivers an installable, app-like reading experience in the browser, with story content and media served reliably at scale. Built with Django and PostgreSQL on the backend, media stored in AWS S3 with IAM-based access control, and deployed on AWS ECS behind Cloudflare for fast, secure global delivery.",
-    "thumbnail": "",
-    "repo": "",
-    "repoLinkExpired": true,
-    "liveLink": "https://tahatok.com",
-    "liveLinkExpired": false,
-    "slug": "tahatok_reading_app",
     "features": [
       "Progressive Web App (PWA) offering an installable, app-like reading experience.",
       "Curated library of stories crafted for children.",
@@ -96,14 +94,21 @@
     ],
     "businessImpact": "Tahatok makes children's stories accessible anywhere through an installable PWA, removing app-store friction while delivering a fast, reliable reading experience. The AWS and Cloudflare infrastructure ensures content is served securely and at scale to a growing audience of young readers.",
     "additionalInfo": "The platform uses AWS S3 with IAM roles for secure media storage and access control, runs as containers on AWS ECS for scalability, and sits behind Cloudflare for caching and protection. The PWA architecture enables offline-friendly, installable access across devices.",
-    "companyName": "",
-    "industry": "Education / Kids",
-    "location": "Remote",
-    "year": 2025,
-    "images": []
+    "thumbnail": "",
+    "images": [],
+    "isPortraitImages": false,
+    "repo": "",
+    "repoLinkExpired": true,
+    "liveLink": "https://tahatok.com",
+    "liveLinkExpired": false
   },
   {
     "title": "Progress Tracker for Music Artists -  Workflow & Release Tracker",
+    "slug": "tracktune_music_artist_app",
+    "year": 2025,
+    "industry": "Music Tech",
+    "location": "Bangalore, India",
+    "companyName": "",
     "tags": [
       "ChatGPT",
       "AI",
@@ -157,12 +162,6 @@
       "track performance analytics"
     ],
     "description": "TrackTune is a mobile application built with React Native that empowers music artists to plan, track, and manage their creative journey—from the first spark of a song idea to the final release on platforms like Spotify and YouTube. The app allows artists to capture ideas, upload lyrics, audio, and related media, generate content using AI, and provides a dynamic timeline to ensure every milestone is met before release deadlines.",
-    "thumbnail": "/_static/projects/tracktune_music_artist_app/ainsemble-cover.png",
-    "repo": "",
-    "repoLinkExpired": true,
-    "liveLink": "",
-    "liveLinkExpired": true,
-    "slug": "tracktune_music_artist_app",
     "features": [
       "Scribble and save song ideas, notes, and rough drafts.",
       "Upload and manage assets such as lyrics, images, audio files, and reference material.",
@@ -176,15 +175,76 @@
     ],
     "businessImpact": "TrackTune simplifies the complex journey of creating and releasing music, helping artists stay on schedule and organized. With AI-powered generation tools and insight dashboards, artists can make informed creative and release decisions. The app enhances productivity, improves content quality, and supports timely professional releases across major streaming platforms.",
     "additionalInfo": "The app is designed for solo artists, bands, and music producers alike, with a focus on intuitive UI/UX and seamless asset management. AI tools enable creative ideation and iteration, while data insights help artists gauge and optimize their musical impact. Built with React Native for cross-platform efficiency and scalability.",
-    "companyName": "",
-    "industry": "Music Tech",
-    "location": "Bangalore, India",
-    "year": 2025,
+    "thumbnail": "/_static/projects/tracktune_music_artist_app/ainsemble-cover.png",
+    "images": [],
     "isPortraitImages": true,
-    "images": []
+    "repo": "",
+    "repoLinkExpired": true,
+    "liveLink": "",
+    "liveLinkExpired": true
+  },
+  {
+    "title": "Fish Traceability System: Sea to Shelf Tracking",
+    "slug": "seafotr-fish-tracability",
+    "year": 2025,
+    "industry": "Fisheries",
+    "location": "Global",
+    "companyName": "",
+    "tags": [
+      "Python",
+      "Django",
+      "AWS",
+      "Amazon Web Services",
+      "SMTP",
+      "Docker",
+      "PostgreSQL",
+      "RestAPI"
+    ],
+    "metaKeywords": [
+      "Fish traceability",
+      "Good food",
+      "Legitfish",
+      "Seafood",
+      "Supply chain management",
+      "Fisheries tracking",
+      "Sustainable fishing",
+      "Food safety",
+      "Digital seafood tracking",
+      "Smart fisheries",
+      "Automated seafood traceability",
+      "Data-driven seafood supply",
+      "Django web application",
+      "Database optimization",
+      "API development",
+      "Inventory management",
+      "Fishing industry innovation",
+      "Sea-to-shelf monitoring",
+      "Logistics and supply chain",
+      "Food quality assurance"
+    ],
+    "description": "Migrated an existing Ruby on Rails application to Django, improving performance and scalability while ensuring seamless data traceability.",
+    "features": [
+      "Worked on migrating the existing application from Ruby on Rails to Django",
+      "Conducted comprehensive data analysis and designed an optimized database schema to support traceability requirements",
+      "Added email functionality to send notifications."
+    ],
+    "businessImpact": "Enhanced seafood traceability, reducing supply chain inefficiencies and ensuring compliance with industry regulations.",
+    "additionalInfo": "Implemented secure authentication and authorization mechanisms to protect data integrity.",
+    "thumbnail": "/_static/projects/seafotr-fish-tracability/saefotr-thumbnail.jpg",
+    "images": [],
+    "isPortraitImages": false,
+    "repo": "",
+    "repoLinkExpired": true,
+    "liveLink": "",
+    "liveLinkExpired": true
   },
   {
     "title": "Dashcam – Android and iOS App for Car",
+    "slug": "inaxes_mobile_app",
+    "year": 2024,
+    "industry": "Automotive Technology",
+    "location": "Bangalore, India",
+    "companyName": "",
     "tags": [
       "Android",
       "iOS",
@@ -231,12 +291,6 @@
       "dashcam management app"
     ],
     "description": "The dashcam Mobile App allows users to configure settings, view recorded footage, and manage device settings for various dashcam models equipped with different chipsets.",
-    "thumbnail": "/_static/projects/inaxes_mobile_app/inaxes-thumbnail.jpg",
-    "repo": "",
-    "repoLinkExpired": true,
-    "liveLink": "https://apps.apple.com/az/app/inaxes/id6475817104",
-    "liveLinkExpired": true,
-    "slug": "inaxes_mobile_app",
     "features": [
       "Configure video recording settings (resolution, frame rate, recording mode).",
       "Adjust camera settings (exposure, brightness).",
@@ -251,70 +305,21 @@
     ],
     "businessImpact": "The dashcam Mobile App enhances user experience by simplifying device configuration and management, improving access to recorded footage and playback options, leading to increased customer satisfaction, brand loyalty, and app usage.",
     "additionalInfo": "The dashcam Mobile App leverages the latest mobile technologies to provide a seamless and intuitive user experience. It is designed to be compatible with a wide range of Android and iOS devices, ensuring accessibility for all users. The app supports multiple dashcam models and chipsets, making it a versatile solution for Inaxes customers.",
-    "companyName": "",
-    "industry": "Automotive Technology",
-    "location": "Bangalore, India",
-    "year": 2024,
+    "thumbnail": "/_static/projects/inaxes_mobile_app/inaxes-thumbnail.jpg",
+    "images": [],
     "isPortraitImages": true,
-    "images": []
-  },
-  {
-    "title": "Fish Traceability System: Sea to Shelf Tracking",
-    "tags": [
-      "Python",
-      "Django",
-      "AWS",
-      "Amazon Web Services",
-      "SMTP",
-      "Docker",
-      "PostgreSQL",
-      "RestAPI"
-    ],
-    "metaKeywords": [
-      "Fish traceability",
-      "Good food",
-      "Legitfish",
-      "Seafood",
-      "Supply chain management",
-      "Fisheries tracking",
-      "Sustainable fishing",
-      "Food safety",
-      "Digital seafood tracking",
-      "Smart fisheries",
-      "Automated seafood traceability",
-      "Data-driven seafood supply",
-      "Django web application",
-      "Database optimization",
-      "API development",
-      "Inventory management",
-      "Fishing industry innovation",
-      "Sea-to-shelf monitoring",
-      "Logistics and supply chain",
-      "Food quality assurance"
-    ],
-    "description": "Migrated an existing Ruby on Rails application to Django, improving performance and scalability while ensuring seamless data traceability.",
-    "thumbnail": "/_static/projects/seafotr-fish-tracability/saefotr-thumbnail.jpg",
     "repo": "",
     "repoLinkExpired": true,
-    "liveLink": "",
-    "liveLinkExpired": true,
-    "slug": "seafotr-fish-tracability",
-    "features": [
-      "Worked on migrating the existing application from Ruby on Rails to Django",
-      "Conducted comprehensive data analysis and designed an optimized database schema to support traceability requirements",
-      "Added email functionality to send notifications."
-    ],
-    "businessImpact": "Enhanced seafood traceability, reducing supply chain inefficiencies and ensuring compliance with industry regulations.",
-    "additionalInfo": "Implemented secure authentication and authorization mechanisms to protect data integrity.",
-    "companyName": "",
-    "industry": "Fisheries",
-    "location": "Global",
-    "year": 2025,
-    "isPortraitImages": false,
-    "images": []
+    "liveLink": "https://apps.apple.com/az/app/inaxes/id6475817104",
+    "liveLinkExpired": true
   },
   {
     "title": "End-to-End Solution for Silicon Manufacturing Company",
+    "slug": "globev",
+    "year": 2024,
+    "industry": "Specialty Metals",
+    "location": "Global",
+    "companyName": "",
     "tags": [
       "Python",
       "Django",
@@ -362,14 +367,7 @@
       "global operations software",
       "manufacturing technology solution"
     ],
-    "isPortraitImages": false,
     "description": "A web application developed to streamline and manage key business operations for Ferroglobe, a global leader in the production of specialty metals. This platform facilitates efficient management of employees, products, and customer relations for a Nasdaq-listed multinational company. By leveraging React.js for the front-end and Django for the back-end, the application provides a responsive and user-friendly interface, while ensuring scalability and security at the enterprise level. The solution integrates with SAP for enterprise resource planning (ERP) and uses PostgreSQL for robust and reliable data storage. The app also includes FTP capabilities for file transfer and integrates Axios to handle API requests seamlessly.",
-    "thumbnail": "/_static/projects/globev/globev-thumbnail.jpg",
-    "repo": "",
-    "repoLinkExpired": true,
-    "liveLink": "",
-    "liveLinkExpired": true,
-    "slug": "globev",
     "features": [
       "Employee Management: Manage employee profiles, track work hours, roles, and access levels.",
       "Product Management: Track and manage product inventories, sales, and logistics. Integration with the company’s SAP system ensures real-time data synchronization for products across global operations.",
@@ -380,14 +378,21 @@
     ],
     "businessImpact": "This application helps to manage its complex operations more efficiently, enabling cross-departmental collaboration, real-time data accessibility, and improved decision-making. By digitizing employee, product, and customer management, the company can optimize workflows, reduce administrative costs, and provide a better experience for both employees and customers.",
     "additionalInfo": "Built using the latest industry-standard technologies, it ensures the application can scale with the company's growing operations, providing long-term value. The integration with SAP allows seamless business processes, enhancing the ERP system's efficiency by syncing crucial data in real-time. The application’s high-performance architecture supports the company's global presence, ensuring smooth operations across multiple regions.",
-    "companyName": "",
-    "industry": "Specialty Metals",
-    "location": "Global",
-    "year": 2024,
-    "images": []
+    "thumbnail": "/_static/projects/globev/globev-thumbnail.jpg",
+    "images": [],
+    "isPortraitImages": false,
+    "repo": "",
+    "repoLinkExpired": true,
+    "liveLink": "",
+    "liveLinkExpired": true
   },
   {
     "title": "DataLens – Article Publishing Site",
+    "slug": "data_lens",
+    "year": 2023,
+    "industry": "Web Development",
+    "location": "Remote",
+    "companyName": "",
     "tags": [
       "Python",
       "Django",
@@ -443,14 +448,7 @@
       "freelance writers platform",
       "web platform for article sharing"
     ],
-    "isPortraitImages": false,
     "description": "Data Lens is an article publishing website where users can publish articles on any topic, and anybody can read them for free. Inspired by Medium.com, it offers a platform for content creators to share their insights and monetize their free time. Technologies like microservices, React, Django, NodeJS, Docker, and AWS were used to build this scalable and efficient platform.",
-    "thumbnail": "/_static/projects/data_lens/datalens.png",
-    "repo": "https://github.com/augustinejoseph/datalens-article-publising-website",
-    "repoLinkExpired": false,
-    "liveLink": "http://datalens.live",
-    "liveLinkExpired": true,
-    "slug": "data_lens",
     "features": [
       "Built for writers to share their thoughts and monetize their free time.",
       "Improved and responsive UI with a modern interface.",
@@ -463,10 +461,7 @@
     ],
     "businessImpact": "Data Lens provides a platform for content creators to easily publish and monetize their articles. By integrating a modern stack like React, NodeJS, and AWS, it offers a highly scalable and responsive system that can cater to growing user bases. The project enables content creators to reach a wide audience while also generating revenue through premium subscriptions and secure payment integration with Stripe.",
     "additionalInfo": "This application utilizes a microservice architecture that makes it easy to scale individual services. By implementing AWS and Docker, it ensures high availability and fast deployment. The integration of GraphQL offers flexibility in data querying, while the use of JWT ensures secure and efficient user authentication.",
-    "companyName": "",
-    "industry": "Web Development",
-    "location": "Remote",
-    "year": 2023,
+    "thumbnail": "/_static/projects/data_lens/datalens.png",
     "images": [
       "/_static/projects/data_lens/datalens1.png",
       "/_static/projects/data_lens/datalens2.png",
@@ -488,10 +483,20 @@
       "/_static/projects/data_lens/datalens6.png",
       "/_static/projects/data_lens/datalens7.png",
       "/_static/projects/data_lens/datalens8.png"
-    ]
+    ],
+    "isPortraitImages": false,
+    "repo": "https://github.com/augustinejoseph/datalens-article-publising-website",
+    "repoLinkExpired": false,
+    "liveLink": "http://datalens.live",
+    "liveLinkExpired": true
   },
   {
     "title": "Movie Finder – Find Movies and TV Show Details",
+    "slug": "movie_finder",
+    "year": 2023,
+    "industry": "Web Development",
+    "location": "Remote",
+    "companyName": "",
     "tags": [
       "React",
       "Create React App",
@@ -528,31 +533,31 @@
       "React Axios movie app"
     ],
     "description": "Movie Finder is a website that uses the TMDB API to fetch movie data and display it using React.js.",
-    "thumbnail": "/_static/projects/movie_finder/moviefinder.webp",
-    "repo": "https://github.com/augustinejoseph/movie-finder-react",
-    "repoLinkExpired": false,
-    "liveLink": "",
-    "liveLinkExpired": true,
-    "slug": "movie_finder",
     "features": [
       "Fetching movie data using TMDB API.",
       "Displaying movie information using React.js."
     ],
-    "isPortraitImages": false,
     "businessImpact": "Movie Finder allows users to search and explore movie data effortlessly. By utilizing TMDB's robust movie database, it serves as a simple yet powerful tool for film enthusiasts. The project demonstrates effective integration with third-party APIs and showcases how to build a smooth, responsive UI with React.js.",
     "additionalInfo": "This application uses Axios to manage API calls and display movie details with minimal latency. The responsive design ensures that users on all devices can enjoy seamless navigation and interaction.",
-    "companyName": "",
-    "industry": "Web Development",
-    "location": "Remote",
-    "year": 2023,
+    "thumbnail": "/_static/projects/movie_finder/moviefinder.webp",
     "images": [
       "/_static/projects/movie_finder/movie-finder1.webp",
       "/_static/projects/movie_finder/movie-finder2.webp",
       "/_static/projects/movie_finder/movie-finder3.webp"
-    ]
+    ],
+    "isPortraitImages": false,
+    "repo": "https://github.com/augustinejoseph/movie-finder-react",
+    "repoLinkExpired": false,
+    "liveLink": "",
+    "liveLinkExpired": true
   },
   {
     "title": "Happy Feets – eCommerce Site to Sell Shoes",
+    "slug": "happy_feets",
+    "year": 2023,
+    "industry": "E-commerce",
+    "location": "Remote",
+    "companyName": "",
     "tags": [
       "Python",
       "Django",
@@ -598,12 +603,6 @@
       "online shoe store"
     ],
     "description": "Happy Feets is an e-commerce website selling footwear, featuring product views, payment integration, returns, and more.",
-    "thumbnail": "/_static/projects/happy_feets/happyfeetz.png",
-    "repo": "https://github.com/augustinejoseph/e-commerce-website",
-    "repoLinkExpired": false,
-    "liveLink": "http://happyfeetz.in",
-    "liveLinkExpired": true,
-    "slug": "happy_feets",
     "features": [
       "Fully functional e-commerce website.",
       "Features like login, cart, wishlist, Razorpay payment, refund, return, and more.",
@@ -612,13 +611,9 @@
       "Django and MVT architecture.",
       "Integrated Razorpay for secure online payments and refunds."
     ],
-    "isPortraitImages": false,
     "businessImpact": "Happy Feets is an e-commerce platform that brings seamless shopping experiences to users. The integration of Razorpay facilitates secure payments, while AWS hosting ensures reliable performance. With features like refund and return management, it provides both convenience and trust for customers.",
     "additionalInfo": "The platform is hosted on AWS, with Route53 and Nginx for domain management and load balancing. Gunicorn ensures optimal performance for Django, and the use of PostgreSQL guarantees data integrity and fast processing.",
-    "companyName": "",
-    "industry": "E-commerce",
-    "location": "Remote",
-    "year": 2023,
+    "thumbnail": "/_static/projects/happy_feets/happyfeetz.png",
     "images": [
       "/_static/projects/happy_feets/happy-feets1.png",
       "/_static/projects/happy_feets/happy-feets2.png",
@@ -633,6 +628,11 @@
       "/_static/projects/happy_feets/happy-feets4.png",
       "/_static/projects/happy_feets/happy-feets5.png",
       "/_static/projects/happy_feets/happy-feets6.png"
-    ]
+    ],
+    "isPortraitImages": false,
+    "repo": "https://github.com/augustinejoseph/e-commerce-website",
+    "repoLinkExpired": false,
+    "liveLink": "http://happyfeetz.in",
+    "liveLinkExpired": true
   }
 ]
