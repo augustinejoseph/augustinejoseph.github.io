@@ -1,41 +1,35 @@
+import { PageHeader } from "@/components/portfolio/page-header";
+import { ProjectCard } from "@/components/portfolio/project-card";
 import { generatePageMetadata } from "../seo";
-import { ProjectCard } from "../../components/project-card";
-import React from "react";
-import { Project } from "@/types";
-import { LINKS } from "@/lib/constants";
-import Link from "next/link";
-import { fetchProjects } from "@/utils";
+import { PROJECTS } from "@/data/portfolio";
+
 export const metadata = generatePageMetadata({
   title: "Projects",
   description:
-    "View some of my notable open source web apps, npm packages, cli tools and more.",
+    "End-to-end products across AI, web, and mobile — from agentic marketing platforms to reading apps for kids.",
 });
 
-export default async function Projects() {
-  const allProjects: Project[] = await fetchProjects();
-
+export default function Projects() {
   return (
-    <React.Fragment>
-      <section>
-        <h1 className="mb-4 text-2xl font-bold tracking-tighter">Projects</h1>
-        <div
-          role="list"
-          className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 "
-        >
-          {allProjects.map((project, idx) => (
-            <div key={idx}>
-                <ProjectCard
-                  project={project}
-                  showThumbnailImage={true}
-                  isLast={allProjects.length == idx}
-                  showBottomBorder = {false}
-                />
-            </div>
-          ))}
-        </div>
-      </section>
-    </React.Fragment>
+    <div
+      className="animate-fade-up"
+      style={{
+        maxWidth: 1120,
+        margin: "0 auto",
+        padding: "clamp(48px,7vw,84px) clamp(20px,7vw,90px) 70px",
+      }}
+    >
+      <PageHeader
+        eyebrow="Selected work"
+        title="Projects"
+        description="End-to-end products across AI, web, and mobile — from agentic marketing platforms to reading apps for kids."
+      />
+
+      <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
+        {PROJECTS.map((project) => (
+          <ProjectCard key={project.id} project={project} variant="wide" />
+        ))}
+      </div>
+    </div>
   );
 }
-
-export const revalidate = 60;
