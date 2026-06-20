@@ -1,7 +1,7 @@
 [
   {
     "title": "GetReplies.ai - AI Autonomous Lifecycle Marketing",
-    "slug": "getresponse_agentic_app",
+    "slug": "getreplies",
     "year": 2025,
     "industry": "Sales and Campaigns",
     "location": "Bangalore, India",
@@ -41,7 +41,7 @@
       "Ability to pause, restart, and duplicate campaigns."
     ],
     "businessImpact": "",
-    "thumbnail": "/_static/projects/getresponse_agentic_app/getreplies-thumbnail-image.png",
+    "thumbnail": "/_static/projects/getreplies/getreplies-thumbnail-image.png",
     "images": [],
     "isPortraitImages": false,
     "repo": "",
