@@ -21,7 +21,7 @@ function CompactItem({ post }: { post: BlogPost }) {
       href={post.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="hover-fade"
+      className="hover-fade blog-compact"
       style={{
         display: "flex",
         gap: 22,
@@ -31,6 +31,7 @@ function CompactItem({ post }: { post: BlogPost }) {
       }}
     >
       <span
+        className="blog-compact-date"
         style={{
           ...MONO,
           fontSize: 12.5,

@@ -72,10 +72,12 @@ function ProjectMedia({
     <div
       style={{
         ...hatch(10),
+        width: "100%",
         ...extra,
         display: "flex",
         alignItems: "flex-end",
         padding: 16,
+        boxSizing: "border-box",
       }}
     >
       <DomainBadge domain={project.domain} />
@@ -134,7 +136,7 @@ function WideCard({ project }: { project: PortfolioProject }) {
   return (
     <Link
       href={`/projects/${project.id}`}
-      className="hover-accent-border"
+      className="hover-accent-border project-wide"
       style={{
         ...CARD,
         textAlign: "left",
@@ -144,7 +146,7 @@ function WideCard({ project }: { project: PortfolioProject }) {
         overflow: "hidden",
       }}
     >
-      <div style={{ padding: "30px clamp(22px,3vw,38px)" }}>
+      <div className="project-wide-body" style={{ padding: "30px clamp(22px,3vw,38px)" }}>
         <div style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
           <h2 style={{ fontSize: 24, fontWeight: 700, margin: 0, letterSpacing: "-0.02em" }}>
             {project.name}
@@ -178,7 +180,9 @@ function WideCard({ project }: { project: PortfolioProject }) {
           View case study →
         </div>
       </div>
-      <ProjectMedia project={project} extra={{ minHeight: 200, height: "100%" }} />
+      <div className="project-wide-media">
+        <ProjectMedia project={project} extra={{ minHeight: 200, height: "100%" }} />
+      </div>
     </Link>
   );
 }

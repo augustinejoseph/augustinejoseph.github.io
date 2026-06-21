@@ -1,5 +1,6 @@
 import { EYEBROW, MONO } from "@/components/portfolio/styles";
 import { PROFILE, SOCIALS } from "@/data/portfolio";
+import { SocialIcon } from "@/components/portfolio/social-icon";
 
 export function Hero() {
   return (
@@ -82,8 +83,9 @@ export function Hero() {
             href={social.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="link-underline"
+            className="link-underline social-link"
           >
+            <SocialIcon label={social.label} />
             {social.label}
           </a>
         ))}

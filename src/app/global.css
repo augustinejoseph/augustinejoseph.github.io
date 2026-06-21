@@ -118,3 +118,112 @@ input[type="email"] {
   -moz-appearance: none;
   appearance: none;
 }
+
+/* ------------------------------------------------------------------ */
+/* Mobile responsive overrides                                         */
+/* The layout is built with inline styles tuned for desktop; these     */
+/* media-query classes adjust the few spots that break on small        */
+/* screens (navbar, footer, blog list).                                */
+/* ------------------------------------------------------------------ */
+
+/* Navbar: condense the brand name and the nav links so the row never
+   overflows / overlaps on narrow screens. The brand uses two spans — a
+   full name shown on desktop and a short first-name shown on mobile. */
+.nav-brand-short {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  /* Swap full name for first name and tighten the links. */
+  .nav-brand-full {
+    display: none;
+  }
+  .nav-brand-short {
+    display: inline;
+  }
+  .nav-links {
+    gap: 16px !important;
+  }
+  .nav-cta {
+    padding: 8px !important;
+    font-size: 13px !important;
+  }
+  /* Swap the "Get in touch" label for a compact mail icon. */
+  .nav-cta-label {
+    display: none !important;
+  }
+  .nav-cta-icon {
+    display: inline-flex !important;
+    align-items: center;
+  }
+}
+
+@media (max-width: 470px) {
+  /* Keep the short first-name as the brand and tighten the links. */
+  .nav-links {
+    gap: 13px !important;
+  }
+  .nav-item {
+    font-size: 13px !important;
+  }
+}
+
+/* Footer: stack the two columns and left-align everything on mobile. */
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 26px !important;
+  }
+}
+
+/* Blog list (compact): the fixed-width date column eats half the row on
+   mobile, so drop it above the title instead of beside it. */
+@media (max-width: 600px) {
+  .blog-compact {
+    flex-direction: column !important;
+    gap: 6px !important;
+  }
+  .blog-compact-date {
+    width: auto !important;
+    padding-top: 0 !important;
+  }
+}
+
+/* Wide project card: keep the media wrapper filling its grid cell so the
+   inner image/placeholder (height:100%) has a box to stretch into. */
+.project-wide-media {
+  display: flex;
+  min-height: 0;
+}
+
+/* On mobile the side-by-side grid crops the image and stretches the text into
+   a tall narrow column. Stack to one column with the image on top. */
+@media (max-width: 700px) {
+  .project-wide {
+    grid-template-columns: 1fr !important;
+  }
+  .project-wide-media {
+    order: -1;
+  }
+  .project-wide-media img,
+  .project-wide-media > div {
+    min-height: 0 !important;
+    height: auto !important;
+    aspect-ratio: 16 / 10;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+/* Social links with icons: keep label + icon aligned. */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+.social-link svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  fill: currentColor;
+}

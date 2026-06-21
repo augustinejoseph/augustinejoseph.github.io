@@ -1,10 +1,12 @@
 import { MONO } from "@/components/portfolio/styles";
 import { PROFILE, SOCIALS } from "@/data/portfolio";
+import { SocialIcon } from "@/components/portfolio/social-icon";
 
 export function Footer() {
   return (
     <footer style={{ borderTop: "1px solid var(--border)", background: "var(--surface)" }}>
       <div
+        className="footer-inner"
         style={{
           maxWidth: 1120,
           margin: "0 auto",
@@ -55,10 +57,11 @@ export function Footer() {
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover-accent-text"
+              className="hover-accent-text social-link"
               style={{ color: "var(--soft)" }}
             >
-              {social.label} ↗
+              <SocialIcon label={social.label} />
+              {social.label}
             </a>
           ))}
         </div>
