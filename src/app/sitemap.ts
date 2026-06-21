@@ -1,28 +1,22 @@
 import { MetadataRoute } from "next";
 import { siteMetadata } from "@/data/siteMetadata";
-import { fetchArticles, fetchProjects } from "@/utils";
-import { BlogCardProps, Project } from "@/types";
-import { LINKS } from "@/lib/constants";
+import { PROJECTS } from "@/data/portfolio";
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = siteMetadata.siteUrl;
+  const today = new Date().toISOString().split("T")[0];
 
-  const allMediumArticles: BlogCardProps[] = await fetchArticles();
-  const mediumRoutes = allMediumArticles.map(({ pubDate, link }) => ({
-    url: link,
-    lastModified: pubDate,
-  }));
-
-  const allProjects: Project[] = await fetchProjects();
-  const projectRoutes = allProjects.map(({ slug }) => ({
-    url: `${siteUrl}${LINKS.PROJECTS_SECTION}/${slug}`,
-    lastModified: new Date().toISOString().split("T")[0],
-  }));
-
-  const routes = ["", "blog", "projects"].map((route) => ({
+  const staticRoutes = ["", "blog", "projects"].map((route) => ({
     url: `${siteUrl}/${route}`,
-    lastModified: new Date().toISOString().split("T")[0],
+    lastModified: today,
   }));
 
-  return [...routes, ...mediumRoutes, ...projectRoutes];
+  const projectRoutes = PROJECTS.map((project) => ({
+    url: `${siteUrl}/projects/${project.id}`,
+    lastModified: today,
+  }));
+
+  // Blog posts live on Medium (external URLs), so they're not part of this
+  // site's sitemap — only the /blog index route above is.
+  return [...staticRoutes, ...projectRoutes];
 }
