@@ -1,4 +1,5 @@
 import { SectionHeading } from "@/components/portfolio/section-heading";
+import { TechIcon } from "@/components/portfolio/tech-icon";
 import { MONO } from "@/components/portfolio/styles";
 import { TECH_GROUPS } from "@/data/portfolio";
 
@@ -31,8 +32,11 @@ export function TechStack() {
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
               {group.items.map((item) => (
                 <span
-                  key={item}
+                  key={item.label}
                   style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 7,
                     fontSize: 13.5,
                     fontWeight: 500,
                     color: "var(--text)",
@@ -42,7 +46,8 @@ export function TechStack() {
                     borderRadius: 8,
                   }}
                 >
-                  {item}
+                  <TechIcon slug={item.icon} />
+                  {item.label}
                 </span>
               ))}
             </div>

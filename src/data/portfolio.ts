@@ -113,26 +113,93 @@ export const SOCIALS: SocialLink[] = [
 /* Tech stack                                                          */
 /* ------------------------------------------------------------------ */
 
+export interface TechItem {
+  label: string;
+  /** simple-icons slug (e.g. "react"), or undefined when no brand icon exists. */
+  icon?: string;
+}
+
 export interface TechGroup {
   label: string;
-  items: string[];
+  items: TechItem[];
 }
 
 export const TECH_GROUPS: TechGroup[] = [
-  { label: "Languages", items: ["Python", "JavaScript", "TypeScript"] },
+  {
+    label: "Languages",
+    items: [
+      { label: "Python", icon: "python" },
+      { label: "JavaScript", icon: "javascript" },
+      { label: "TypeScript", icon: "typescript" },
+    ],
+  },
   {
     label: "Frontend",
-    items: ["React", "React Native", "Next.js", "Vue.js", "Redux", "Tailwind", "SASS"],
+    items: [
+      { label: "React", icon: "react" },
+      { label: "React Native", icon: "react" },
+      { label: "Next.js", icon: "nextdotjs" },
+      { label: "Expo", icon: "expo" },
+      { label: "Redux", icon: "redux" },
+      { label: "Tailwind", icon: "tailwindcss" },
+      { label: "PWA", icon: "pwa" },
+    ],
   },
   {
     label: "Backend & Data",
-    items: ["Django", "FastAPI", "Node.js", "GraphQL", "REST API", "PostgreSQL", "MongoDB"],
+    items: [
+      { label: "Django", icon: "django" },
+      { label: "FastAPI", icon: "fastapi" },
+      { label: "Node.js", icon: "nodedotjs" },
+      { label: "GraphQL", icon: "graphql" },
+      { label: "REST API" },
+      { label: "WebSocket", icon: "socketdotio" },
+      { label: "JWT", icon: "jsonwebtokens" },
+      { label: "PostgreSQL", icon: "postgresql" },
+      { label: "MongoDB", icon: "mongodb" },
+    ],
+  },
+  {
+    label: "Architecture & Integrations",
+    items: [
+      { label: "Microservice Architecture", icon: "microservices" },
+      { label: "SAP", icon: "sap" },
+      { label: "Spotify API", icon: "spotify" },
+    ],
+  },
+  {
+    label: "Payments & Messaging",
+    items: [
+      { label: "Stripe", icon: "stripe" },
+      { label: "Razorpay", icon: "razorpay" },
+      { label: "WhatsApp Business API", icon: "whatsapp" },
+      { label: "Twilio", icon: "twilio" },
+    ],
   },
   {
     label: "Cloud & DevOps",
-    items: ["AWS", "GCP", "Docker", "Nginx", "Linux", "GitHub Actions", "CI/CD"],
+    items: [
+      { label: "AWS", icon: "aws" },
+      { label: "S3", icon: "s3" },
+      { label: "GCP", icon: "googlecloud" },
+      { label: "Oracle Cloud", icon: "oracle" },
+      { label: "Cloudflare", icon: "cloudflare" },
+      { label: "Docker", icon: "docker" },
+      { label: "Nginx", icon: "nginx" },
+      { label: "Linux", icon: "linux" },
+      { label: "Git", icon: "git" },
+      { label: "GitHub Actions", icon: "githubactions" },
+      { label: "CI/CD", icon: "cicd" },
+    ],
   },
-  { label: "AI", items: ["Agentic AI", "AI Integration", "LLM Apps"] },
+  {
+    label: "AI",
+    items: [
+      { label: "Agentic AI", icon: "ai" },
+      { label: "AI Integration", icon: "ai" },
+      { label: "LLM Apps", icon: "ai" },
+    ],
+  },
 ];
 
 /* ------------------------------------------------------------------ */
