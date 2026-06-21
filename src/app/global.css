@@ -188,6 +188,18 @@ input[type="email"] {
     width: auto !important;
     padding-top: 0 !important;
   }
+  .blog-compact-thumb {
+    width: 100% !important;
+    height: 160px !important;
+  }
+  .blog-full {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+  .blog-full img {
+    width: 100% !important;
+    height: 180px !important;
+  }
 }
 
 /* Wide project card: keep the media wrapper filling its grid cell so the

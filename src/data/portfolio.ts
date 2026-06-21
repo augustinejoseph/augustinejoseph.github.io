@@ -407,6 +407,8 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   url: string;
+  /** Cover image pulled from the Medium RSS feed, if any. */
+  thumbnail?: string;
 }
 
 export const MEDIUM_URL = "https://augustinejoseph.medium.com/";
@@ -418,6 +420,8 @@ interface MediumItem {
   link: string;
   description: string;
   categories: string[];
+  thumbnail?: string;
+  content?: string;
 }
 
 function formatDate(pubDate: string): string {
@@ -428,6 +432,14 @@ function formatDate(pubDate: string): string {
     month: "long",
     day: "numeric",
   });
+}
+
+/** Use the feed's thumbnail, else the first <img> found in the HTML content. */
+function toThumbnail(item: MediumItem): string | undefined {
+  if (item.thumbnail) return item.thumbnail;
+  const html = item.content ?? item.description ?? "";
+  const match = html.match(/<img[^>]+src=["']([^"']+)["']/i);
+  return match?.[1];
 }
 
 /** Strip HTML tags and collapse whitespace into a short excerpt. */
@@ -446,6 +458,7 @@ function toPost(item: MediumItem): BlogPost {
     title: item.title.replace(/\s*[—-]\s*$|…$/g, "").trim(),
     excerpt: toExcerpt(item.description),
     url: item.link,
+    thumbnail: toThumbnail(item),
   };
 }
 
