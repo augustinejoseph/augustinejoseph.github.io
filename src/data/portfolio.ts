@@ -167,11 +167,21 @@ export interface PortfolioProject {
   tagline: string;
   domain: string;
   year: string;
-  url: string;
+  /** Live site / repo URL, or undefined when no working link exists. */
+  url?: string;
+  /** Label for the primary link button ("Visit live site" vs "View source"). */
+  urlLabel?: string;
   overview: string;
   contributions: string[];
   tags: string[];
   previewTags: string[];
+  /** Longer-form impact + context paragraphs from the JSON, when present. */
+  businessImpact?: string;
+  additionalInfo?: string;
+  /** Gallery images under `public/`, in display order. */
+  images: string[];
+  /** Whether gallery images are portrait-oriented (affects layout). */
+  isPortraitImages?: boolean;
   /** Thumbnail under `public/`, or undefined when none exists. */
   thumbnail?: string;
   /** Highlighted on the home page. */
@@ -220,7 +230,6 @@ const PRESENTATION: ProjectPresentation[] = [
     name: "TrackTune",
     tagline: "Workflow & Release Tracker for Music Artists",
     domain: "React Native · iOS / Android",
-    url: "https://augustinejoseph.medium.com/",
     featured: true,
     previewTags: ["React Native", "AI", "Redux", "iOS / Android"],
   },
@@ -229,7 +238,6 @@ const PRESENTATION: ProjectPresentation[] = [
     name: "Fish Traceability System",
     tagline: "Sea to Shelf Tracking",
     domain: "Fisheries",
-    url: "https://augustinejoseph.medium.com/",
     previewTags: ["Django", "PostgreSQL", "Docker", "AWS"],
   },
   {
@@ -244,7 +252,6 @@ const PRESENTATION: ProjectPresentation[] = [
     name: "Ferroglobe Platform",
     tagline: "End-to-End Solution for a Silicon Manufacturer",
     domain: "Specialty Metals",
-    url: "https://augustinejoseph.medium.com/",
     previewTags: ["Django", "React", "PostgreSQL", "SAP"],
   },
   {
@@ -270,9 +277,30 @@ const PRESENTATION: ProjectPresentation[] = [
   },
 ];
 
+/**
+ * Resolve the primary link for a project, honouring the JSON's expiry flags so
+ * dead links never render as a button. An explicit `meta.url` always wins; then
+ * a non-expired live link; then a non-expired repo. Returns undefined when no
+ * working link exists, so the detail page can hide the button entirely.
+ */
+function resolveLink(
+  meta: ProjectPresentation,
+  raw: (typeof rawProjects)[number],
+): { url: string; label: string } | undefined {
+  if (meta.url) return { url: meta.url, label: "Visit live site" };
+  if (raw.liveLink && !raw.liveLinkExpired) {
+    return { url: raw.liveLink, label: "Visit live site" };
+  }
+  if (raw.repo && !raw.repoLinkExpired) {
+    return { url: raw.repo, label: "View source" };
+  }
+  return undefined;
+}
+
 export const PROJECTS: PortfolioProject[] = PRESENTATION.flatMap((meta) => {
   const raw = rawProjects.find((p) => p.slug === meta.slug);
   if (!raw) return [];
+  const link = resolveLink(meta, raw);
   return [
     {
       id: raw.slug,
@@ -280,11 +308,16 @@ export const PROJECTS: PortfolioProject[] = PRESENTATION.flatMap((meta) => {
       tagline: meta.tagline,
       domain: meta.domain ?? raw.industry,
       year: String(raw.year),
-      url: meta.url || raw.liveLink || raw.repo,
+      url: link?.url,
+      urlLabel: link?.label,
       overview: raw.description,
       contributions: raw.features,
       tags: raw.tags,
       previewTags: meta.previewTags,
+      businessImpact: ("businessImpact" in raw && raw.businessImpact) || undefined,
+      additionalInfo: ("additionalInfo" in raw && raw.additionalInfo) || undefined,
+      images: raw.images,
+      isPortraitImages: raw.isPortraitImages,
       thumbnail: raw.thumbnail || undefined,
       featured: meta.featured,
     },

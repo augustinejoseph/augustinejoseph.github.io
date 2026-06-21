@@ -55,26 +55,28 @@ export default function ProjectDetail({ params }: Params) {
         {project.tagline}
       </div>
 
-      <a
-        href={project.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover-accent-bg"
-        style={{
-          display: "inline-flex",
-          alignItems: "center",
-          gap: 8,
-          marginTop: 22,
-          background: "var(--accent)",
-          color: "#fff",
-          fontWeight: 600,
-          fontSize: 14.5,
-          padding: "11px 20px",
-          borderRadius: 999,
-        }}
-      >
-        Visit live site ↗
-      </a>
+      {project.url ? (
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover-accent-bg"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 8,
+            marginTop: 22,
+            background: "var(--accent)",
+            color: "#fff",
+            fontWeight: 600,
+            fontSize: 14.5,
+            padding: "11px 20px",
+            borderRadius: 999,
+          }}
+        >
+          {project.urlLabel ?? "Visit live site"} ↗
+        </a>
+      ) : null}
 
       {project.thumbnail ? (
         // eslint-disable-next-line @next/next/no-img-element
@@ -171,12 +173,70 @@ export default function ProjectDetail({ params }: Params) {
           </span>
         ))}
       </div>
+
+      {project.businessImpact ? (
+        <>
+          <DetailHeading style={{ marginTop: 48 }}>Impact</DetailHeading>
+          <p style={{ fontSize: 18, lineHeight: 1.7, color: "var(--text)", margin: "0 0 40px" }}>
+            {project.businessImpact}
+          </p>
+        </>
+      ) : null}
+
+      {project.additionalInfo ? (
+        <>
+          <DetailHeading style={project.businessImpact ? undefined : { marginTop: 48 }}>
+            Additional details
+          </DetailHeading>
+          <p style={{ fontSize: 18, lineHeight: 1.7, color: "var(--text)", margin: "0 0 40px" }}>
+            {project.additionalInfo}
+          </p>
+        </>
+      ) : null}
+
+      {project.images.length > 0 ? (
+        <>
+          <DetailHeading style={{ marginTop: 48 }}>Gallery</DetailHeading>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: project.isPortraitImages
+                ? "repeat(auto-fill, minmax(180px, 1fr))"
+                : "repeat(auto-fill, minmax(280px, 1fr))",
+              gap: 16,
+            }}
+          >
+            {project.images.map((src) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={src}
+                src={src}
+                alt={`${project.name} screenshot`}
+                loading="lazy"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  borderRadius: 14,
+                  border: "1px solid var(--border)",
+                  display: "block",
+                }}
+              />
+            ))}
+          </div>
+        </>
+      ) : null}
     </div>
   );
 }
 
 /** Small monospace uppercase section label used in the case study. */
-function DetailHeading({ children }: { children: string }) {
+function DetailHeading({
+  children,
+  style,
+}: {
+  children: string;
+  style?: React.CSSProperties;
+}) {
   return (
     <h2
       style={{
@@ -186,6 +246,7 @@ function DetailHeading({ children }: { children: string }) {
         textTransform: "uppercase",
         color: "var(--accent-2)",
         margin: "0 0 16px",
+        ...style,
       }}
     >
       {children}
