@@ -227,3 +227,14 @@ input[type="email"] {
   flex-shrink: 0;
   fill: currentColor;
 }
+
+/* On narrow screens the 5 socials wrap unevenly (4 + 1). Switch to a 2-column
+   grid so they distribute evenly instead of leaving a lone item on its row. */
+@media (max-width: 470px) {
+  .social-row {
+    display: grid !important;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 28px;
+    row-gap: 14px;
+  }
+}

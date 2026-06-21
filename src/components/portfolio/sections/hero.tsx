@@ -75,6 +75,7 @@ export function Hero() {
       </div>
 
       <div
+        className="social-row"
         style={{ display: "flex", flexWrap: "wrap", gap: 18, marginTop: 30, ...MONO, fontSize: 13 }}
       >
         {SOCIALS.map((social) => (
