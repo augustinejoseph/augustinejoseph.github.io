@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { EYEBROW, hatch, MONO } from "@/components/portfolio/styles";
+import { Img } from "@/components/portfolio/img";
 import { getProject, PROJECTS } from "@/data/portfolio";
 
 interface Params {
@@ -79,8 +80,7 @@ export default function ProjectDetail({ params }: Params) {
       ) : null}
 
       {project.thumbnail ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
+        <Img
           src={project.thumbnail}
           alt={`${project.name} preview`}
           style={{
@@ -207,8 +207,7 @@ export default function ProjectDetail({ params }: Params) {
             }}
           >
             {project.images.map((src) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
+              <Img
                 key={src}
                 src={src}
                 alt={`${project.name} screenshot`}

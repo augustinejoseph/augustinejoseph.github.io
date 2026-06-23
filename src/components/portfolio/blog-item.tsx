@@ -1,4 +1,5 @@
 import { MONO } from "@/components/portfolio/styles";
+import { Img } from "@/components/portfolio/img";
 import { BlogPost } from "@/data/portfolio";
 
 interface BlogItemProps {
@@ -45,7 +46,7 @@ function CompactItem({ post }: { post: BlogPost }) {
         {post.date}
       </span>
       {post.thumbnail && (
-        <img
+        <Img
           src={post.thumbnail}
           alt=""
           loading="lazy"
@@ -98,7 +99,7 @@ function FullItem({ post }: { post: BlogPost }) {
       style={{ display: "flex", gap: 24, padding: "28px 0", borderTop: "1px solid var(--border)" }}
     >
       {post.thumbnail && (
-        <img
+        <Img
           src={post.thumbnail}
           alt=""
           loading="lazy"

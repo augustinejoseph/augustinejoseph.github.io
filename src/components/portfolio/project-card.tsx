@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CARD, hatch, MONO, TAG_CHIP } from "@/components/portfolio/styles";
+import { Img } from "@/components/portfolio/img";
 import { PortfolioProject } from "@/data/portfolio";
 
 interface ProjectCardProps {
@@ -59,8 +60,7 @@ function ProjectMedia({
 }) {
   if (project.thumbnail) {
     return (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
+      <Img
         src={project.thumbnail}
         alt={`${project.name} preview`}
         loading="lazy"
