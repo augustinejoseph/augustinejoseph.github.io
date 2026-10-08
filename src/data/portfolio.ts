@@ -131,6 +131,7 @@ export const TECH_GROUPS: TechGroup[] = [
       { label: "Python", icon: "python" },
       { label: "JavaScript", icon: "javascript" },
       { label: "TypeScript", icon: "typescript" },
+      { label: "SQL" },
     ],
   },
   {
@@ -141,12 +142,12 @@ export const TECH_GROUPS: TechGroup[] = [
       { label: "Next.js", icon: "nextdotjs" },
       { label: "Expo", icon: "expo" },
       { label: "Redux", icon: "redux" },
-      { label: "Tailwind", icon: "tailwindcss" },
+      { label: "Tailwind CSS", icon: "tailwindcss" },
       { label: "PWA", icon: "pwa" },
     ],
   },
   {
-    label: "Backend & Data",
+    label: "Backend",
     items: [
       { label: "Django", icon: "django" },
       { label: "FastAPI", icon: "fastapi" },
@@ -155,8 +156,14 @@ export const TECH_GROUPS: TechGroup[] = [
       { label: "REST API" },
       { label: "WebSocket", icon: "socketdotio" },
       { label: "JWT", icon: "jsonwebtokens" },
+    ],
+  },
+  {
+    label: "Data",
+    items: [
       { label: "PostgreSQL", icon: "postgresql" },
       { label: "MongoDB", icon: "mongodb" },
+      { label: "Snowflake", icon: "snowflake" },
     ],
   },
   {
@@ -180,7 +187,9 @@ export const TECH_GROUPS: TechGroup[] = [
     label: "Cloud & DevOps",
     items: [
       { label: "AWS", icon: "aws" },
+      { label: "Azure", icon: "azure" },
       { label: "S3", icon: "s3" },
+      { label: "ECS", icon: "amazonecs" },
       { label: "GCP", icon: "googlecloud" },
       { label: "Oracle Cloud", icon: "oracle" },
       { label: "Cloudflare", icon: "cloudflare" },
