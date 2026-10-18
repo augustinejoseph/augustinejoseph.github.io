@@ -285,6 +285,22 @@ interface ProjectPresentation {
 
 const PRESENTATION: ProjectPresentation[] = [
   {
+    slug: "hedge_fund_platform",
+    name: "Hedge Fund",
+    tagline: "Manage funds and investors with a single platform",
+    domain: "Financial Services",
+    featured: true,
+    previewTags: ["Snowflake", "Azure", "PostgreSQL", "Django"],
+  },
+    {
+    slug: "globev",
+    name: "Ferroglobe Platform",
+    tagline: "End-to-End Solution for a Silicon Manufacturer",
+    domain: "Specialty Metals",
+    featured: true,
+    previewTags: ["Django", "React", "PostgreSQL", "SAP"],
+  },
+  {
     slug: "getreplies",
     name: "GetReplies.ai",
     tagline: "AI Autonomous Lifecycle Marketing",
@@ -297,8 +313,7 @@ const PRESENTATION: ProjectPresentation[] = [
     name: "Tahatok",
     tagline: "PWA Reading App for Children's Stories",
     domain: "tahatok.com",
-    url: "https://tahatok.com",
-    featured: true,
+    url: "https://www.tahatok.com",
     previewTags: ["Django", "PostgreSQL", "AWS", "PWA"],
   },
   {
@@ -306,7 +321,6 @@ const PRESENTATION: ProjectPresentation[] = [
     name: "TrackTune",
     tagline: "Workflow & Release Tracker for Music Artists",
     domain: "React Native · iOS / Android",
-    featured: true,
     previewTags: ["React Native", "AI", "Redux", "iOS / Android"],
   },
   {
@@ -322,13 +336,6 @@ const PRESENTATION: ProjectPresentation[] = [
     tagline: "Android & iOS App for Car Dashcams",
     domain: "Automotive",
     previewTags: ["React Native", "Redux", "iOS / Android"],
-  },
-  {
-    slug: "globev",
-    name: "Ferroglobe Platform",
-    tagline: "End-to-End Solution for a Silicon Manufacturer",
-    domain: "Specialty Metals",
-    previewTags: ["Django", "React", "PostgreSQL", "SAP"],
   },
   {
     slug: "data_lens",
